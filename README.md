@@ -9,7 +9,7 @@
 **Large-scale, Informative, and Diverse Multi-round Dialogue Data**
 
 <p align="center">
-  <a href="https">Data Explorer</a> •
+  <a href="http://39.101.77.220/">Data Explorer</a> •
   <a href="#data">Data</a> •
   <a href="#construction-of-ultrachat">Construction Process</a> •
   <a href="#news">News and Future Plans</a>
