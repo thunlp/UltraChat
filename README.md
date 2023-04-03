@@ -31,7 +31,8 @@
 
 This project aims to construct an *open-source, large-scale, and multi-round* dialogue data powered by Turbo APIs to facilitate the construction of powerful language models with general conversational capability.
 In consideration of factors such as safeguarding privacy, **we do not directly use any data available on the Internet as prompts**.
-To ensure generation quality, two separate ChatGPT APIs are adopted in generation, where one plays the role of the user to generate queries and the other generates the response. We instruct the user ChatGPT with carefully designed prompt to mimic a human user behavior and call the two APIs iteratively. The generated conversations undergo further post-processing.
+To ensure generation quality, two separate ChatGPT Turbo APIs are adopted in generation, where one plays the role of the user to generate queries and the other generates the response. 
+We instruct the user model with carefully designed prompt to mimic a human user behavior and call the two APIs iteratively. The generated conversations undergo further post-processing.
 <img align="bottom" src="https://i.328888.xyz/2023/03/31/iwIdSt.png" width="80px"> is composed of three sectors:
 
 - 🌏 **Questions about the World**: The dialogue data in this sector is derived from a wide range of inquiries related to concepts, entities, and objects from the real world. The topics covered are extensive, spanning areas such as technology, art, and entrepreneurship.
@@ -74,8 +75,9 @@ We will specify the construction process once a part of UltraChat is released.
 </div>
 
 - Based on the above meta topics, we generate 1100+ subtopics for data construction
-- For each subtopics, we generate up to 10 specific questions. Then we use ChatGPT APIs to generate new relevant questions for each of the 10 questions. We use hand-crafted prompts to instruct ChatGPT to generate a diverse set of questions covering a wide range of common concepts and objects.
-- For each question, we generate a 3~7-round conversation using the two ChatGPT APIs iteratively as described above.
+- For each subtopics, we generate up to 10 specific questions. 
+- Then we use Turbo APIs to generate new relevant questions for each of the 10 questions. We use hand-crafted prompts to instruct the model to generate a diverse set of questions covering a wide range of common concepts and objects.
+- For each question, we generate a 3~7-round conversation using the two models iteratively as described above.
 
 </p>
 </details>
