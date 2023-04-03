@@ -52,7 +52,7 @@ Currently, we have released the first part of the Questions about the World sect
 
 ## Data
 
-The data can only be used for research purposes, and it is distributed under CC BY NC 4.0 License (non-commercial use).
+The data can only be used for research purposes, and it is distributed under [CC BY NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/) (non-commercial use).
 
 
 ## Construction of UltraChat
