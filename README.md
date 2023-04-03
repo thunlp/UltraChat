@@ -57,8 +57,9 @@ The dataset is intended solely for research and educational purposes and should 
 
 ## Construction of UltraChat
 
-The general idea of UltraChat is two use separate LLMs to generate opening lines, simulate users and response.
-Each sector of UltraChat has its own challenges and requires particular stragety designs. We will specify the construction process once a part of UltraChat is released.
+The general idea of UltraChat is to use separate LLMs to generate opening lines, simulate users and response to the queries.
+Each sector of UltraChat has its own challenges and requires particular stragety designs. 
+We will specify the construction process once a part of UltraChat is released.
 
 
 <details><summary> <b>Questions about the World</b> </summary>
@@ -101,7 +102,7 @@ Each sector of UltraChat has its own challenges and requires particular stragety
 - March 31, 2023: The first part of Questions about the World is released, it contains 160k generated multi-round dialogues.
 
 ## To Do
-- We will release another another set of Questions about the World, which would more focus on specific real-world objects.
+- We will release another set of Questions about the World, which would more focus on specific real-world objects.
 - We will continue to release the data of Writing and Creation and Assistance on Existent Materials in the future.
 - We will train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
 
