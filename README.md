@@ -55,7 +55,9 @@ Currently, we have released the first part of the Questions about the World sect
 
 The dataset is intended solely for research and educational purposes and should not be construed as reflecting the opinions or views of the creators, owners, or contributors of this dataset. And it is distributed under [CC BY NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/) (non-commercial use).
 
-The released data can be downloaded [here](https://cloud.tsinghua.edu.cn/f/a67af2461312484aa120/?dl=1)
+
+### Data Release
+- [Questions about the World [Part I]](https://cloud.tsinghua.edu.cn/f/a67af2461312484aa120/?dl=1)
 
 ### Data Format
 Each line in the downloaded data file is a json dict containing the data id and dialogue data in a list format. Below is an example line.
