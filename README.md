@@ -19,7 +19,7 @@
 
 <div align="center">
 
-![Dialogues](https://img.shields.io/badge/Current\_Dialogues-160k-red?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Current\_Dialogues-280k-red?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Questions\_about\_the\_Wolrd-Released-green?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Unreleased-9cf?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Unreleased-9cf?style=flat-square)
@@ -137,7 +137,7 @@ We will specify the construction process once a sector of UltraChat is released.
 
 
 ## News
-- March 31, 2023: The first part of Questions about the World is released, it contains 160k generated multi-round dialogues.
+- March 31, 2023: The first part of Questions about the World is released, it contains 280k generated multi-round dialogues.
 
 ## To Do
 - We will release the rest part of data for Questions about the World.
