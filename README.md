@@ -60,7 +60,7 @@ The dataset is intended solely for research and educational purposes and should 
 
 The general idea of UltraChat is to use separate LLMs to generate opening lines, simulate users and respond to the queries.
 Each sector of UltraChat has its own challenges and requires particular stragety designs. 
-We will specify the construction process once a part of UltraChat is released.
+We will specify the construction process once a sector of UltraChat is released.
 
 
 <details><summary> <b>Questions about the World</b> </summary>
@@ -87,7 +87,7 @@ We will specify the construction process once a part of UltraChat is released.
   
  
   
-  - We will detail the construction method once this part of data is released.
+  - We will detail the construction method once this sector of data is released.
   
 </p>
 </details>
@@ -95,7 +95,7 @@ We will specify the construction process once a part of UltraChat is released.
 <details><summary> <b>Writing and Creation</b> </summary>
 <p>
   
- - We will detail the construction method once this part of data is released.
+ - We will detail the construction method once this sector of data is released.
   
   
 </p>
