@@ -40,7 +40,7 @@ We instruct the user model with carefully designed prompt to mimic a human user 
 - 📋 **Assistance on Existent Materials**: The dialogue data in this sector is generated based on existing materials, including but not limited to rewriting, continuation, summarization, and inference, covering a diverse range of topics.
 
 
-Currently, we have released the first part of the Questions about the World sector, which contains 160k diverse and informative dialogues about the real world. Other data will be released in the future.
+Currently, we have released the first part of the Questions about the World sector, which contains 280k diverse and informative dialogues about the real world. Other data will be released in the future.
 
 <details><summary> <b>An Example of UltraChat </b> </summary>
 <p>
