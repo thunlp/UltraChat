@@ -32,7 +32,7 @@
 This project aims to construct an *open-source, large-scale, and multi-round* dialogue data powered by Turbo APIs to facilitate the construction of powerful language models with general conversational capability.
 In consideration of factors such as safeguarding privacy, **we do not directly use any data available on the Internet as prompts**.
 To ensure generation quality, two separate ChatGPT Turbo APIs are adopted in generation, where one plays the role of the user to generate queries and the other generates the response. 
-We instruct the user model with carefully designed prompt to mimic a human user behavior and call the two APIs iteratively. The generated conversations undergo further post-processing.
+We instruct the user model with carefully designed prompt to mimic a human user behavior and call the two APIs iteratively. The generated dialogues undergo further post-processing and filtering.
 <img align="bottom" src="https://i.328888.xyz/2023/03/31/iwIdSt.png" width="80px"> is composed of three sectors:
 
 - 🌏 **Questions about the World**: The dialogue data in this sector is derived from a wide range of inquiries related to concepts, entities, and objects from the real world. The topics covered are extensive, spanning areas such as technology, art, and entrepreneurship.
@@ -54,6 +54,27 @@ Currently, we have released the first part of the Questions about the World sect
 ## Data
 
 The dataset is intended solely for research and educational purposes and should not be construed as reflecting the opinions or views of the creators, owners, or contributors of this dataset. And it is distributed under [CC BY NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/) (non-commercial use).
+
+The released data can be downloaded [here](https://cloud.tsinghua.edu.cn/f/a67af2461312484aa120/?dl=1)
+
+### Data Format
+Each line in the downloaded data file is a json dict containing the data id and dialogue data in a list format. Below is an example line.
+
+```
+{
+  "id": "0", 
+  "data": [
+    "How can cross training benefit groups like runners, swimmers, or weightlifters?", 
+    "Cross training can benefit groups like runners, swimmers, or weightlifters in the following ways: ...", 
+    "That makes sense. I've been wanting to improve my running time, but I never thought about incorporating strength training. Do you have any recommendations for specific exercises?", 
+    "Sure, here are some strength training exercises that can benefit runners: ...", 
+    "Hmm, I'm not really a fan of weightlifting though. Can I incorporate other forms of exercise into my routine to improve my running time?", 
+    "Yes, absolutely! ...",
+    ...
+    ]
+}
+
+```
 
 
 ## Construction of UltraChat
@@ -77,9 +98,22 @@ We will specify the construction process once a sector of UltraChat is released.
 - Based on the above meta topics, we generate 1100+ subtopics for data construction
 - For each subtopics, we generate up to 10 specific questions. 
 - Then we use Turbo APIs to generate new relevant questions for each of the 10 questions. We use hand-crafted prompts to instruct the model to generate a diverse set of questions covering a wide range of common concepts and objects.
-- For each question, we generate a 3~7-round conversation using the two models iteratively as described above.
+- For each question, we generate a 3~7-round dialogue using the two models iteratively as described above.
 
 </p>
+
+<p>
+
+#### Common Real-world Entities
+
+- We gather top-frequent 10000 named entities from Wikidata.
+- We generate 5 meta questions for each entity using ChatGPT API.
+- For each meta question, we generate 10 more specific questions and 20 related but general questions.
+- We sample 20w specific questions and 25w general questions along with the 5w meta questions, and we generate a 3~7-round dialogue for each.
+
+*For now, the released data cover generated dialogues based on meta questions and some of the specific questions*
+</p>
+
 </details>
 
 <details><summary> <b>Assistance on Existent Materials</b> </summary>
@@ -106,7 +140,7 @@ We will specify the construction process once a sector of UltraChat is released.
 - March 31, 2023: The first part of Questions about the World is released, it contains 160k generated multi-round dialogues.
 
 ## To Do
-- We will release another set of Questions about the World, which would more focus on specific real-world objects.
+- We will release the rest part of data for Questions about the World.
 - We will continue to release the data of Writing and Creation and Assistance on Existent Materials in the future.
 - We will train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
 
