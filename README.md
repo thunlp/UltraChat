@@ -57,6 +57,9 @@ The dataset is intended solely for research and educational purposes and should 
 
 
 ### Data Release
+[Explore](http://39.101.77.220/) the data before downloading.
+
+Download links:
 - [Questions about the World [Part I]](https://cloud.tsinghua.edu.cn/f/a67af2461312484aa120/?dl=1)
 
 ### Data Format
