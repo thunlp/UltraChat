@@ -19,7 +19,7 @@
 
 <div align="center">
 
-![Dialogues](https://img.shields.io/badge/Current\_Dialogues-280k-red?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Current\_Dialogues-570k-red?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Questions\_about\_the\_Wolrd-Released-green?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Unreleased-9cf?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Unreleased-9cf?style=flat-square)
@@ -40,7 +40,7 @@ We instruct the user model with carefully designed prompt to mimic a human user 
 - 📋 **Assistance on Existent Materials**: The dialogue data in this sector is generated based on existing materials, including but not limited to rewriting, continuation, summarization, and inference, covering a diverse range of topics.
 
 
-Currently, we have released the first part of the Questions about the World sector, which contains 280k diverse and informative dialogues about the real world. Other data will be released in the future.
+Currently, we have released the Questions about the World sector, which contains 570k diverse and informative dialogues about the real world. Other data will be released in the future.
 
 <details><summary> <b>An Example of UltraChat </b> </summary>
 <p>
@@ -60,7 +60,7 @@ The dataset is intended solely for research and educational purposes and should 
 [Explore](http://39.101.77.220/) the data before downloading.
 
 Download links:
-- [Questions about the World [Part I]](https://cloud.tsinghua.edu.cn/f/a67af2461312484aa120/?dl=1)
+- [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/a68feaa7cd124956a94d/?dl=1)
 
 ### Data Format
 Each line in the downloaded data file is a json dict containing the data id and dialogue data in a list format. Below is an example line.
@@ -142,10 +142,24 @@ We will specify the construction process once a sector of UltraChat is released.
 
 
 ## News
+- April 7, 2023: The second part of Questions about the World is released, it contains 290k generated multi-round dialogues.
 - March 31, 2023: The first part of Questions about the World is released, it contains 280k generated multi-round dialogues.
 
 ## To Do
-- We will release the rest part of data for Questions about the World.
-- We will continue to release the data of Writing and Creation and Assistance on Existent Materials in the future.
-- We will train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
+- [x] Release the rest part of data for Questions about the World.
+- [ ] Continue to release the data of Writing and Creation and Assistance on Existent Materials in the future.
+- [ ] Train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
 
+## Citation
+Feel free to cite the repo if you thinkd UltraChat is useful.
+
+```bibtex
+@misc{UltraChat,
+  author = {Ding, Ning and Chen, Yulin and Xu, Bokai and Hu, Shengding and Qin, Yujia and Liu, Zhiyuan and Sun, Maosong and Zhou, Bowen},
+  title = {UltraChat: A Large-scale Auto-generated Multi-round Dialogue Data},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/thunlp/ultrachat}},
+}
+```
