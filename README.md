@@ -116,7 +116,6 @@ We will specify the construction process once a sector of UltraChat is released.
 - For each meta question, we generate 10 more specific questions and 20 related but general questions.
 - We sample 20w specific questions and 25w general questions along with the 5w meta questions, and we generate a 3~7-round dialogue for each.
 
-*For now, the released data cover generated dialogues based on meta questions and some of the specific questions*
 </p>
 
 </details>
@@ -140,6 +139,11 @@ We will specify the construction process once a sector of UltraChat is released.
 </p>
 </details>
 
+
+## Training
+We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](train).
+- download the released data and put it under `./data`
+- run `accelerate launch train.py` to start training
 
 ## News
 - April 7, 2023: The second part of Questions about the World is released, it contains 290k generated multi-round dialogues.
