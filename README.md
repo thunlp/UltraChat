@@ -12,6 +12,7 @@
   <a href="http://39.101.77.220/">Data Explorer</a> •
   <a href="#data">Data</a> •
   <a href="#construction-of-ultrachat">Construction Process</a> •
+  <a href="#training">Training</a> •
   <a href="#news">News and Future Plans</a>
 </p>
 
