@@ -142,9 +142,9 @@ We will specify the construction process once a sector of UltraChat is released.
 
 
 ## Training
-We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](train).
-- download the released data and put it under `./data`
-- run `accelerate launch train.py` to start training
+We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](train), which is implemented with [OpenPrompt](https://github.com/thunlp/OpenPrompt)
+- Download the released data and put it under `./data`
+- Run `accelerate launch train.py` to start training
 
 ## News
 - April 7, 2023: The second part of Questions about the World is released, it contains 290k generated multi-round dialogues.
@@ -156,7 +156,7 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - [ ] Train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
 
 ## Citation
-Feel free to cite the repo if you thinkd UltraChat is useful.
+Feel free to cite the repo if you think UltraChat is useful.
 
 ```bibtex
 @misc{UltraChat,
