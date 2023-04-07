@@ -66,7 +66,7 @@ Download links:
 ### Data Format
 Each line in the downloaded data file is a json dict containing the data id and dialogue data in a list format. Below is an example line.
 
-```
+```JSON
 {
   "id": "0", 
   "data": [
@@ -76,7 +76,7 @@ Each line in the downloaded data file is a json dict containing the data id and 
     "Sure, here are some strength training exercises that can benefit runners: ...", 
     "Hmm, I'm not really a fan of weightlifting though. Can I incorporate other forms of exercise into my routine to improve my running time?", 
     "Yes, absolutely! ...",
-    ...
+    "..."
     ]
 }
 
