@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="http://39.101.77.220/">Data Explorer</a> •
-  <a href="https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac">Nomic AI Explorer</a> •
+  <a href="https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac">Nomic AI Atlas Explorer</a> •
   <a href="#data">Data Release</a> •
   <a href="#construction-of-ultrachat">Construction Process</a> •
   <a href="#training">Training</a> •
