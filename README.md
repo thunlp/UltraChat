@@ -10,7 +10,8 @@
 
 <p align="center">
   <a href="http://39.101.77.220/">Data Explorer</a> •
-  <a href="#data">Data</a> •
+  <a href="https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac">Nomic AI Explorer</a> •
+  <a href="#data">Data Release</a> •
   <a href="#construction-of-ultrachat">Construction Process</a> •
   <a href="#training">Training</a> •
   <a href="#news">News and Future Plans</a>
@@ -58,7 +59,7 @@ The dataset is intended solely for research and educational purposes and should 
 
 
 ### Data Release
-[Explore](http://39.101.77.220/) the data before downloading.
+[Explore](http://39.101.77.220/) the data before downloading, or use [nomic AI exporer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac).
 
 Download links:
 - [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/0a27393192ad46a5a081/?dl=1)
@@ -147,6 +148,8 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - Run `accelerate launch train.py` to start training
 
 ## News
+- April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have a [nomic AI exporer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
+- April 8, 2023: We release a training script by taking GPT-J as an example.
 - April 7, 2023: The second part of Questions about the World is released, it contains 290k generated multi-round dialogues.
 - March 31, 2023: The first part of Questions about the World is released, it contains 280k generated multi-round dialogues.
 
