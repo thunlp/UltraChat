@@ -61,7 +61,7 @@ The dataset is intended solely for research and educational purposes and should 
 [Explore](http://39.101.77.220/) the data before downloading.
 
 Download links:
-- [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/a68feaa7cd124956a94d/?dl=1)
+- [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/0a27393192ad46a5a081/?dl=1)
 
 ### Data Format
 Each line in the downloaded data file is a json dict containing the data id and dialogue data in a list format. Below is an example line.
