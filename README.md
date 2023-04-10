@@ -59,7 +59,7 @@ The dataset is intended solely for research and educational purposes and should 
 
 
 ### Data Release
-[Explore](http://39.101.77.220/) the data before downloading, or use [nomic AI exporer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac).
+[Explore](http://39.101.77.220/) the data before downloading, or use [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac).
 
 Download links:
 - [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/0a27393192ad46a5a081/?dl=1)
