@@ -148,7 +148,7 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - Run `accelerate launch train.py` to start training
 
 ## News
-- April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have a [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
+- April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have an [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
 - April 8, 2023: We release a training script by taking GPT-J as an example.
 - April 7, 2023: The second part of Questions about the World is released, it contains 290k generated multi-round dialogues.
 - March 31, 2023: The first part of Questions about the World is released, it contains 280k generated multi-round dialogues.
@@ -157,6 +157,7 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - [x] Release the rest part of data for Questions about the World.
 - [ ] Continue to release the data of Writing and Creation and Assistance on Existent Materials in the future.
 - [ ] Train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
+- [ ] There will be a Chinese version of UltraChat.
 
 ## Citation
 Feel free to cite the repo if you think UltraChat is useful.
