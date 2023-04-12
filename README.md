@@ -21,9 +21,9 @@
 
 <div align="center">
 
-![Dialogues](https://img.shields.io/badge/Current\_Dialogues-570k-red?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Current\_Dialogues-675k-red?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Questions\_about\_the\_Wolrd-Released-green?style=flat-square)
-![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Unreleased-9cf?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Partially\_Released-yellow?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Unreleased-9cf?style=flat-square)
 
 </div>
@@ -62,6 +62,7 @@ The dataset is intended solely for research and educational purposes and should 
 [Explore](http://39.101.77.220/) the data before downloading, or use [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac).
 
 Download links:
+- [Writing and Creation [Part I]](https://cloud.tsinghua.edu.cn/f/57258a87846243218a9b/?dl=1)
 - [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/0a27393192ad46a5a081/?dl=1)
 
 ### Data Format
@@ -148,6 +149,7 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - Run `accelerate launch train.py` to start training
 
 ## News
+- Apirl 12, 2023: The first part of Writeing and Creation sector is released.
 - April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have an [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
 - April 8, 2023: We release a training script by taking GPT-J as an example.
 - April 7, 2023: The second part of Questions about the World is released, it contains 290k generated multi-round dialogues.
