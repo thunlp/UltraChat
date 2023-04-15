@@ -161,6 +161,12 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - [ ] Train a model on UltraChat and conduct in-detail analysis, welcome to use it to train your chat model!
 - [ ] There will be a Chinese version of UltraChat.
 
+
+## Limitations
+
+- Auto-generated data may contain hallucination and other formats of falst facts. This issue will mainly appear on the first sector of the data. 
+- To address the issue, more extensive post-processing will be conducted.
+
 ## Citation
 Feel free to cite the repo if you think UltraChat is useful.
 
