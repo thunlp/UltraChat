@@ -23,7 +23,7 @@
 
 ![Dialogues](https://img.shields.io/badge/Current\_Dialogues-1.24M-red?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Questions\_about\_the\_Wolrd-Released-green?style=flat-square)
-![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Partially\_Released-yellow?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Released-green?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Unreleased-9cf?style=flat-square)
 
 </div>
