@@ -21,10 +21,10 @@
 
 <div align="center">
 
-![Dialogues](https://img.shields.io/badge/Current\_Dialogues-1.24M-red?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Current\_Dialogues-1.57M-red?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Questions\_about\_the\_Wolrd-Released-green?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Released-green?style=flat-square)
-![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Unreleased-9cf?style=flat-square)
+![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Released-green?style=flat-square)
 
 </div>
 
@@ -42,7 +42,6 @@ We instruct the user model with carefully designed prompts to mimic human user b
 - 📋 **Assistance on Existent Materials**: The dialogue data in this sector is generated based on existing materials, including but not limited to rewriting, continuation, summarization, and inference, covering a diverse range of topics.
 
 
-Currently, we have released the Questions about the World and the Writing and Creation sector, which contains 1.24 million diverse and informative dialogues about the real world. Other data will be released in the future.
 
 <details><summary> <b>An Example of UltraChat </b> </summary>
 <p>
@@ -62,9 +61,10 @@ The dataset is intended solely for research and educational purposes and should 
 [Explore](http://39.101.77.220/) the data before downloading, or use [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac).
 
 Download links:
-- [Writing and Creation [Part II]](https://cloud.tsinghua.edu.cn/f/099b4dd71b82448fb7fb/?dl=1)
-- [Writing and Creation [Part I]](https://cloud.tsinghua.edu.cn/f/57258a87846243218a9b/?dl=1)
 - [Questions about the World [Part I + Part II]](https://cloud.tsinghua.edu.cn/f/0a27393192ad46a5a081/?dl=1)
+- [Writing and Creation [Part I]](https://cloud.tsinghua.edu.cn/f/57258a87846243218a9b/?dl=1)
+- [Writing and Creation [Part II]](https://cloud.tsinghua.edu.cn/f/099b4dd71b82448fb7fb/?dl=1)
+- [Assistance on Existent Materials [Part I]](https://cloud.tsinghua.edu.cn/f/1f7abdf2d2564cb4b338/?dl=1)
 
 ### Data Format
 Each line in the downloaded data file is a json dict containing the data id and dialogue data in a list format. Below is an example line.
@@ -150,6 +150,7 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 - Run `accelerate launch train.py` to start training
 
 ## News
+- April 20, 2023: Released all data, more processing and additional data are expected.
 - April 17, 2023: The rest of the Writing and Creation sector is released (457k). 
 - April 12, 2023: The first part of the Writing and Creation sector is released.
 - April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have an [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
@@ -160,7 +161,7 @@ We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](trai
 ## To Do
 - [x] Release the rest part of the data for Questions about the World.
 - [x] Continue to release the data of Writing and Creation.
-- [ ] Continue to release the data of  Assistance on Existent Materials in the future.
+- [x] Continue to release the data of  Assistance on Existent Materials in the future.
 - [ ] Train a model on UltraChat and conduct in-detail analysis. Welcome to use it to train your chat model!
 - [ ] There will be a Chinese version of UltraChat.
 
