@@ -87,6 +87,20 @@ Each line in the downloaded data file is a json dict containing the data id and 
 
 ```
 
+## Training
+
+Wr provide training code to fine-tune[LLaMa](https://github.com/facebookresearch/llama) (however we are not distributing the weights of LLaMa) on UltraChat in [`.src/`](src), the training is accelerated by [BMTrain]([BMTrain/bmtrain/optim at main · OpenBMB/BMTrain (github.com)](https://github.com/OpenBMB/BMTrain)).
+
+- Download the released data and put it under `./data`
+
+- Run `train_bm.py`, for example:
+
+  ```WANDB_MODE="offline" torchrun --nnodes=1 --nproc_per_node=8 --rdzv_id=1 --rdzv_backend=c10d --rdzv_endpoint=localhost:50003 train_bm.py --tensorboard ./ultrachat_llama_tb_2 --save_step 5000 --logging_step 100```
+
+We also provide a training script to fine-tune GPT-J on UltraChat in [`.src/train_legacy/`](src), which is implemented with [OpenPrompt](https://github.com/thunlp/OpenPrompt)
+
+- Download the released data and put it under `./data`
+- Run `accelerate launch train.py` to start training
 
 ## Construction of UltraChat
 
@@ -137,7 +151,7 @@ We will specify the construction process once a sector of UltraChat is released.
 
 - For each type of writing, generate 200 different instructions that ask an AI assistant to generate text material, and 80% of the instructions are further expanded and detailed.
 - Use the generated instructions as initial input and generate a 2~4-round dialogue each.
-  
+
 </p>
 </details>
 
@@ -148,17 +162,13 @@ We will specify the construction process once a sector of UltraChat is released.
 - We generate up to 5 questions/instructions for each piece of material.
 - We combine the material with each question/instruction with a set of manually designed template as the initial input of a user to start a dialogue with AI assistant.
 - For each input, we generate a 2~4-round dialogue.
- 
+
 </p>
 </details>
 
 
 
 
-## Training
-We provide a training script to fine-tune GPT-J on UltraChat in [`./train`](train), which is implemented with [OpenPrompt](https://github.com/thunlp/OpenPrompt)
-- Download the released data and put it under `./data`
-- Run `accelerate launch train.py` to start training
 
 ## News
 - April 20, 2023: Released all data, more processing and additional data are expected.
