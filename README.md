@@ -129,7 +129,12 @@ We will specify the construction process once a sector of UltraChat is released.
 <details><summary> <b>Writing and Creation</b> </summary>
 <p>
 
-- We first collect 20 types of writing, as shown above.
+- We first collect 20 types of writing, as shown below (icons are from [flaticon](https://www.flaticon.com/)).
+
+<div align="center">
+<img src="https://github.com/thunlp/UltraChat/raw/main/figures/figure.png" width="650px">
+</div>
+
 - For each type of writing, generate 200 different instructions that ask an AI assistant to generate text material, and 80% of the instructions are further expanded and detailed.
 - Use the generated instructions as initial input and generate a 2~4-round dialogue each.
   
