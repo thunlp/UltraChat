@@ -126,24 +126,28 @@ We will specify the construction process once a sector of UltraChat is released.
 
 </details>
 
-<details><summary> <b>Assistance on Existent Materials</b> </summary>
+<details><summary> <b>Writing and Creation</b> </summary>
 <p>
-  
- 
-  
-  - We will detail the construction method once this sector of data is released.
+
+- We first collect 20 types of writing, as shown above.
+- For each type of writing, generate 200 different instructions that ask an AI assistant to generate text material, and 80% of the instructions are further expanded and detailed.
+- Use the generated instructions as initial input and generate a 2~4-round dialogue each.
   
 </p>
 </details>
 
-<details><summary> <b>Writing and Creation</b> </summary>
+<details><summary> <b>Assistance on Existent Materials</b> </summary>
 <p>
-  
- - We will detail the construction method once this sector of data is released.
-  
-  
+
+- We extract ~10w diverse materials from C4 dataset.
+- We generate up to 5 questions/instructions for each piece of material.
+- We combine the material with each question/instruction with a set of manually designed template as the initial input of a user to start a dialogue with AI assistant.
+- For each input, we generate a 2~4-round dialogue.
+ 
 </p>
 </details>
+
+
 
 
 ## Training
