@@ -95,7 +95,9 @@ Wr provide training code to fine-tune[LLaMa](https://github.com/facebookresearch
 
 - Run `train_bm.py`, for example:
 
-  ```WANDB_MODE="offline" torchrun --nnodes=1 --nproc_per_node=8 --rdzv_id=1 --rdzv_backend=c10d --rdzv_endpoint=localhost:50003 train_bm.py --tensorboard ./ultrachat_llama_tb_2 --save_step 5000 --logging_step 100```
+  ```bash
+  WANDB_MODE="offline" torchrun --nnodes=1 --nproc_per_node=8 --rdzv_id=1 --rdzv_backend=c10d --rdzv_endpoint=localhost:50003 train_bm.py --tensorboard ./ultrachat_llama_tb_2 --save_step 5000 --logging_step 100
+  ```
 
 We also provide a training script to fine-tune GPT-J on UltraChat in [`.src/train_legacy/`](src), which is implemented with [OpenPrompt](https://github.com/thunlp/OpenPrompt)
 
