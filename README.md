@@ -42,6 +42,7 @@ We instruct the user model with carefully designed prompts to mimic human user b
 - 📋 **Assistance on Existent Materials**: The dialogue data in this sector is generated based on existing materials, including but not limited to rewriting, continuation, summarization, and inference, covering a diverse range of topics.
 
 
+*Please note that current released data is still not the final version. We are conducting extensive post-processing to reduce hallucination and ensure coherence to further improve the data quality.*
 
 <details><summary> <b>An Example of UltraChat </b> </summary>
 <p>
@@ -89,7 +90,7 @@ Each line in the downloaded data file is a json dict containing the data id and 
 
 ## Training
 
-Wr provide training code to fine-tune[LLaMa](https://github.com/facebookresearch/llama) (however we are not distributing the weights of LLaMa) on UltraChat in [`.src/`](src), the training is accelerated by [BMTrain]([BMTrain/bmtrain/optim at main · OpenBMB/BMTrain (github.com)](https://github.com/OpenBMB/BMTrain)).
+Wr provide training code to fine-tune [LLaMa](https://github.com/facebookresearch/llama) (however we are not distributing the weights of LLaMa) on UltraChat in [`.src/`](src), the training is accelerated by [BMTrain](https://github.com/OpenBMB/BMTrain).
 
 - Download the released data and put it under `./data`
 
