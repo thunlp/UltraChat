@@ -111,6 +111,9 @@ The general idea of UltraChat is to use separate LLMs to generate opening lines,
 Each sector of UltraChat has its own challenges and requires particular strategy designs. 
 We will specify the construction process once a sector of UltraChat is released.
 
+<div align="center">
+<img src="https://i.328888.xyz/2023/04/26/ivs8gt.png" width="800px">
+</div>
 
 <details><summary> <b>Questions about the World</b> </summary>
 <p>
