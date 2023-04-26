@@ -112,7 +112,7 @@ Each sector of UltraChat has its own challenges and requires particular strategy
 We will specify the construction process once a sector of UltraChat is released.
 
 <div align="center">
-<img src="https://i.328888.xyz/2023/04/26/ivs8gt.png" width="800px">
+<img src="https://i.328888.xyz/2023/04/26/ivs8gt.png" width="700px">
 </div>
 
 <details><summary> <b>Questions about the World</b> </summary>
