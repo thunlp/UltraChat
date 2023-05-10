@@ -1,7 +1,7 @@
 import argparse
 import torch
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from ultrachat_dataset import UltraChatProcessor, PromptIterableDataset, collator
+from ultrachat_dataset import load_raw_data, PromptIterableDataset, collator
 from transformers.optimization import get_linear_schedule_with_warmup
 from tqdm import tqdm
 from torch.utils.data import DataLoader
@@ -10,8 +10,6 @@ from functools import partial
 import time
 import os
 import wandb
-
-TEMPLATE = "{}\n\n### Assistant:"
 
 def get_model_tokenizer(args):
     model = LlamaForCausalLM.from_pretrained(args.model_name_or_path)
@@ -98,8 +96,7 @@ def train(args):
 
     bmt.synchronize()
 
-    processor = UltraChatProcessor()
-    original_dataset = processor.get_examples(args.data_file, tokenizer)
+    original_dataset = load_raw_data(args.data_file)
     print("total training instance number:", len(original_dataset))
     
 
@@ -118,8 +115,8 @@ def train(args):
         data_per_gpu = len(dataset) // bmt.world_size()
         dataset = dataset[bmt.rank() * data_per_gpu : (bmt.rank() + 1) * data_per_gpu]
 
-        dataset = PromptIterableDataset(dataset, TEMPLATE, tokenizer, args.max_seq_length, teacher_forcing=True, truncate_method="head")
-        dataloader = DataLoader(dataset, batch_size=2, collate_fn=partial(collator, tokenizer))
+        dataset = PromptIterableDataset(dataset, tokenizer = tokenizer, max_seq_length = args.max_seq_length, teacher_forcing=True, truncate_method="tail")
+        dataloader = DataLoader(dataset, batch_size=args.batch_size_per_device, collate_fn=partial(collator, tokenizer))
 
         if global_step >= args.train_iters:
             break
@@ -199,14 +196,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("")
     parser.add_argument("--lr", type=float, default=1e-5)
     parser.add_argument("--model", type=str, default='llama')
-    parser.add_argument("--model_name_or_path", default='/path/to/llama-7B-hf')
+    parser.add_argument("--model_name_or_path", default='/path/to/huggingface/llama')
     parser.add_argument("--epochs", default=3, type=int)
     parser.add_argument("--seed", default=0, type=int)
 
     parser.add_argument("--max_seq_length", default=2048, type=int)
+    parser.add_argument("--batch_size_per_device", default=2, type=int)
     parser.add_argument("--logging_step", default=100, type=int)
     parser.add_argument("--save_step", default=50000, type=int)
-    parser.add_argument("--data_file", default="./data/ultrachat_release_230407.json", type=str)
+    parser.add_argument("--data_file", default="../data/processed/data.json", type=str)
     parser.add_argument("--gradient_accumulation_steps", default=1, type=int)
     parser.add_argument("--wandb", action="store_true")
     parser.add_argument("--with_eval", action="store_true")

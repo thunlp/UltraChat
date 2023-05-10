@@ -1,7 +1,6 @@
 bmtrain==0.2.1
-openprompt==1.0.1
 scikit_learn==1.0
 torch==1.13.1
 tqdm
-transformers==4.28.0.dev0
+transformers==4.28.1
 wandb

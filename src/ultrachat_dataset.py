@@ -1,9 +1,7 @@
-from openprompt.data_utils.utils import InputExample
 import os
 import json
 from typing import *
 
-from openprompt.data_utils.data_processor import DataProcessor
 
 import torch
 from torch.utils.data import IterableDataset, Dataset
@@ -12,34 +10,20 @@ from tqdm import tqdm
 from transformers.tokenization_utils import PreTrainedTokenizer
 import copy
 
-class UltraChatProcessor(DataProcessor):
-    def __init__(self):
-        super().__init__()
-        self.labels = None
 
-    def get_examples(self, data_path: str, tokenizer) -> List[InputExample]:
-        examples = []
-        j = 0
-        with open(data_path) as f:
-            for line in tqdm(f.readlines()):
-                if line.strip():
-                    data = json.loads(line)
-                    id_ = data["id"]
-                    dialogue = data["data"]
-                    tags = [i for _ in range(len(dialogue)//2) for i in ["### User", "### Assistant"]]
-                    for i in range(0, len(dialogue), 2):
-                        tgt_text = dialogue[i+1]+tokenizer.eos_token
-                        context = dialogue[:i+1]
-                        context = zip(tags[:i+1], context)
-                        context = [": ".join(item) for item in context]
-                        example = InputExample(guid=str(j), text_a="", tgt_text=tgt_text, meta={"context": context})
-                        examples.append(example)
-                        j += 1
-        return examples
+def load_single_file(data_file):
+    with open(data_file)as f:
+        lines = f.readlines()
+    return [json.loads(l) for l in lines]
 
-
-    def get_src_tgt_len_ratio(self,):
-        pass
+def load_raw_data(data_file):
+    raw_dataset = []
+    if isinstance(data_file, str):
+        raw_dataset += load_single_file(data_file)
+    elif isinstance(data_file, list):
+        for f_ in data_file:
+            raw_dataset += load_single_file(f_)
+    return raw_dataset
     
 IGNORE_INDEX=-100
 
@@ -60,45 +44,78 @@ def collator(tokenizer, instances: Sequence[Dict]) -> Dict[str, torch.Tensor]:
 class PromptIterableDataset(IterableDataset):
     def __init__(self,
                  raw_dataset: Union[Dataset, List],
-                 template: Text,
+                 sep: List = ["EOS", "\n"],
                  tokenizer: PreTrainedTokenizer = None,
                  max_seq_length: Optional[int] = 512,
-                 teacher_forcing: Optional[bool] = False,
+                 teacher_forcing: Optional[bool] = True,
                  truncate_method: Optional[str] = "tail",
                 ):
         assert hasattr(raw_dataset, "__iter__"), f"The dataset must have __iter__ method. dataset is {raw_dataset}"
         assert hasattr(raw_dataset, "__len__"), f"The dataset must have __len__ method. dataset is {raw_dataset}"
         self.raw_dataset = raw_dataset
-        self.template = template
+        self.sep = sep
+        self._end_token = None
+        self.start_token = self.sep[-1]
         self.teacher_forcing = teacher_forcing
+        assert self.teacher_forcing, print("must use teacher forcing")
 
         self.tokenizer = tokenizer
         self.truncate_method = truncate_method
         self.max_seq_length = max_seq_length
-        assert self.truncate_method == "head", print("only head truncate support")
+        assert self.truncate_method == "tail", print("only tail truncate support")
+    
+
+    
+    @property
+    def end_token(self):
+        if self._end_token is not None:
+            return self._end_token
+        end_token = self.sep[0]
+        if end_token == "EOS":
+            self._end_token = self.tokenizer.eos_token
+        else:
+            self._end_token = end_token
+        return self._end_token
 
     def tokenize_example(self, example):
-        chat_history = "\n\n".join(example.meta["context"])
-        src_txt = self.template.format(chat_history)
-        tgt_txt = example.tgt_text
+        end_token = self.end_token
+        tags = [i for _ in range(len(example["data"])//2) for i in ["User", "Assistant"]]
+        labels = []
+        tokenized_ids = []
+        for i, c in enumerate(example["data"]):
+            c_new = tags[i] + ": " + c + end_token
+            if i % 2 == 1:
+                # model
+                c_input = self.start_token + tags[i] + ": "
+                tokenized = self.tokenizer(c_input, add_special_tokens=False)
+                tokenized_ids += tokenized["input_ids"]
+                labels += [IGNORE_INDEX] * len(tokenized["input_ids"])
 
-        tokenized_src = self.tokenizer(src_txt, return_tensors="pt")
+                c_generate = c + end_token
+                tokenized = self.tokenizer(c_generate, add_special_tokens=False)
+                tokenized_ids += tokenized["input_ids"]
+                labels += tokenized["input_ids"]
 
-        input_len = len(tokenized_src["input_ids"][0])
+            else:
+                # user
+                if i == 0:
+                    # no start token
+                    c_new = self.tokenizer.bos_token + tags[i] + ": " + c + end_token
+                else:
+                    c_new = self.start_token + tags[i] + ": " + c + end_token
+                tokenized = self.tokenizer(c_new, add_special_tokens=False)
+                tokenized_ids += tokenized["input_ids"]
+                labels += [IGNORE_INDEX] * len(tokenized["input_ids"])
 
-        tokenized_example = self.tokenizer(src_txt + " " + tgt_txt, return_tensors="pt")
-        tokenized_example = {k:v[0] for k, v in tokenized_example.items()}
+        assert len(tokenized_ids) == len(labels)
 
-        labels = copy.deepcopy(tokenized_example["input_ids"])
-        labels[:input_len] = IGNORE_INDEX
-
-        return {**tokenized_example, "labels": labels}
+        return {"input_ids": torch.LongTensor(tokenized_ids), "labels": torch.LongTensor(labels)}
 
     def truncate(self, tokenized_example):
         old_len = len(tokenized_example["input_ids"])
         if old_len > self.max_seq_length:
             for k in tokenized_example:
-                tokenized_example[k] = tokenized_example[k][old_len - self.max_seq_length:]
+                tokenized_example[k] = tokenized_example[k][:-(old_len - self.max_seq_length)]
 
         return tokenized_example
 
@@ -113,4 +130,18 @@ class PromptIterableDataset(IterableDataset):
         return len(self.raw_dataset)
 
 
+if __name__ == "__main__":
+    from transformers import AutoTokenizer, LlamaTokenizer
+    TEMPLATE = "{} Assistant:"
+    tokenizer = LlamaTokenizer.from_pretrained("../../llama-7B-HF")
+    raw_dataset = load_raw_data("../data/processed/part2_1.json")
 
+    dataset = PromptIterableDataset(raw_dataset, tokenizer=tokenizer, max_seq_length=2048, teacher_forcing=True)
+    for data in dataset:
+        print(data)
+        print(tokenizer.decode(data["input_ids"][:1000]))
+        
+        model_output = data["input_ids"][:1000][data["labels"][:1000]!=-100]
+        print("##### model output")
+        print(tokenizer.decode(model_output))
+        break
