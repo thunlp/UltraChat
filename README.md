@@ -9,12 +9,12 @@
 **Large-scale, Informative, and Diverse Multi-round Dialogue Data**
 
 <p align="center">
+  <a href="#training"><b>Model</b></a> •
+  <a href="https://arxiv.org/abs/2305.14233"><b>Paper</b></a> •
   <a href="http://39.101.77.220/">Data Explorer</a> •
   <a href="https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac">Nomic AI Atlas Explorer</a> •
   <a href="#data">Data Release</a> •
   <a href="#construction-of-ultrachat">Construction Process</a> •
-  <a href="#training">Training</a> •
-  <a href="#news">News and Future Plans</a>
 </p>
 
 </div>
@@ -88,9 +88,12 @@ Each line in the downloaded data file is a json dict containing the data id and 
 
 ```
 
-## Training
+## Model
 
-Wr provide training code to fine-tune [LLaMa](https://github.com/facebookresearch/llama) (however we are not distributing the weights of LLaMa) on UltraChat in [`.src/`](src), the training is accelerated by [BMTrain](https://github.com/OpenBMB/BMTrain).
+We have trained a state-of-the-art LLaMA model on UltraChat, see the performance in the [report](https://arxiv.org/abs/2305.14233). 
+UltraLLaMA-13b and stronger models will be released soon.
+
+We provide training code to fine-tune [LLaMa](https://github.com/facebookresearch/llama) (however we are not distributing the weights of LLaMa) on UltraChat in [`.src/`](src), the training is accelerated by [BMTrain](https://github.com/OpenBMB/BMTrain).
 
 - Download the released data and put it under `./data`
 
@@ -177,6 +180,7 @@ We will specify the construction process once a sector of UltraChat is released.
 
 
 ## News
+- May 24, 2023: We have trained a state-of-the-art chat model and release a report.
 - April 20, 2023: Released all data, more processing and additional data are expected.
 - April 17, 2023: The rest of the Writing and Creation sector is released (457k). 
 - April 12, 2023: The first part of the Writing and Creation sector is released.
