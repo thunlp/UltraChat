@@ -9,7 +9,7 @@
 **Large-scale, Informative, and Diverse Multi-round Dialogue Data**
 
 <p align="center">
-  <a href="#training"><b>Model</b></a> •
+   <a href="#model"><b>Model</b></a> •
   <a href="https://arxiv.org/abs/2305.14233"><b>Paper</b></a> •
   <a href="http://39.101.77.220/">Data Explorer</a> •
   <a href="https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac">Nomic AI Atlas Explorer</a> •
