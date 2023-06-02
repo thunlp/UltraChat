@@ -206,12 +206,10 @@ We will specify the construction process once a sector of UltraChat is released.
 Feel free to cite the repo if you think UltraChat is useful.
 
 ```bibtex
-@misc{UltraChat,
-  author = {Ding, Ning and Chen, Yulin and Xu, Bokai and Hu, Shengding and Qin, Yujia and Liu, Zhiyuan and Sun, Maosong and Zhou, Bowen},
-  title = {UltraChat: A Large-scale Auto-generated Multi-round Dialogue Data},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/thunlp/ultrachat}},
+@article{ding2023enhancing,
+  title={Enhancing Chat Language Models by Scaling High-quality Instructional Conversations},
+  author={Ding, Ning and Chen, Yulin and Xu, Bokai and Qin, Yujia and Zheng, Zhi and Hu, Shengding and Liu, Zhiyuan and Sun, Maosong and Zhou, Bowen},
+  journal={arXiv preprint arXiv:2305.14233},
+  year={2023}
 }
 ```
