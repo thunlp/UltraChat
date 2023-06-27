@@ -1,0 +1,1542 @@
+[
+    {
+        "class": " Vicuna ",
+        "data": "Compose an engaging travel blog post about a recent trip to Hawaii, highlighting cultural experiences and must-see attractions."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Can you help me write a formal email to a potential business partner proposing a joint venture?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Can you help me write a resignation letter to my current employer, while leaving on good terms and expressing gratitude for the opportunities provided?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Use an appropriate format to structure a formal letter of recommendation for a student applying to a prestigious graduate program in computer science."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Write a compelling product launch announcement email to inform our customers of our new software solution."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Draft an apology email to a customer who experienced a delay in their order, and provide reassurance that the issue has been resolved."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Write a script for a YouTube video exploring the history and cultural significance of jazz."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Write a captivating movie review for a recently released science fiction film, discussing its plot, characters, and special effects."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Structure a podcast script for an episode discussing the influence of streaming platforms on the music industry."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Write a symphony concert review, discussing the orchestra's performance and overall audience experience."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How would you introduce yourself as a medieval knight at a royal banquet?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "As a pirate captain, what would you say to your crew to motivate them to search for hidden treasure?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "If you were a Shakespearean character, how would you declare your love for someone in a soliloquy?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "As a superhero, how would you explain your origin story to a curious child?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Imagine you are a time traveler from the year 3000. What technological advancements would you tell people about?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "As a sports commentator, describe the winning play in the final seconds of a championship game."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Pretend to be a world-famous chef. How would you describe your signature dish to a panel of judges?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "You are a mountain climber reaching the summit of Mount Everest. Describe your emotions and the view from the top."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "As a space colonist on Mars, describe your daily life and the challenges you face living on another planet."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Pretend to be a character in a post-apocalyptic world. Describe how you survive and the allies you encounter."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can you determine if a restaurant is popular among locals or mainly attracts tourists, and why might this information be useful?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are some subtle clues that suggest someone is pretending to understand a topic or conversation when they are actually confused or uninformed?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Why might someone choose to use a paper map or ask for directions instead of relying on a GPS device or smartphone app?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can you determine if a person is genuinely interested in a conversation or simply being polite?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Why might someone prefer to shop at a small, locally-owned business instead of a large chain store, even if the prices are higher?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can you assess the credibility of a source of information, such as a news article or blog post, without relying solely on the reputation of the author or publisher?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Why do some people enjoy the sensation of being scared, such as by watching horror movies or going on roller coasters, while others avoid these experiences?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can observing the behavior of other people in a social situation provide clues about cultural norms and expectations?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Do we have a moral obligation to explore space, or should we focus on solving Earth's problems first?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "In a world where automation is becoming increasingly prevalent, is it more important to prioritize job creation or technological progress?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many times does the average human blink in a lifetime? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many atoms are in a grain of salt? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many lightning strikes occur on Earth each day? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many balloons would it take to lift a house like in the movie \"Up\"? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many text messages are sent globally in a minute? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many words are spoken daily on Earth? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many snowflakes fall during a typical winter? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many pages are in all the books ever written? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many times has the Earth orbited the Sun since the beginning of life? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How many songs have been recorded throughout history? Try to explain your answer. Your explanation should take the reader through your reasoning step-by-step."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if the Internet had been invented during the Renaissance period?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if the Aztecs had successfully repelled the Spanish conquistadors?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if the Black Death had not occurred in the 14th century?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if Isaac Newton had focused on biology instead of physics?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if the Beatles had never formed as a band?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if Alan Turing had not cracked the Enigma code during World War II?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if the Suez Canal had never been constructed?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if the Maya civilization had never mysteriously collapsed?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if Christopher Columbus had not discovered the Americas?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What if Vincent van Gogh had been a successful artist during his lifetime?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Develop a C++ program that reads a text file line by line and counts the number of occurrences of a specific word in the file."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Implement a Python function to find the longest common subsequence of two input strings using dynamic programming."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Implement a regular expression in Python to validate an email address."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Write a program to find the nth Fibonacci number using dynamic programming."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Implement a binary search algorithm to find a specific element in a sorted array."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Implement a queue data structure using two stacks in Python."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Implement a program to find the common elements in two arrays without using any extra data structures."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Given that f(x) = 5x^3 - 2x + 3, find the value of f(2)."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Solve for x in the equation 3x + 10 = 5(x - 2)."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "If the endpoints of a line segment are (2, -2) and (10, 4), what is the length of the segment?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can I improve my time management skills?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are the most effective ways to deal with stress?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are the main differences between Python and JavaScript programming languages?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can I increase my productivity while working from home?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Can you explain the basics of quantum computing?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are the differences between plant-based and animal-based protein sources?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can I develop my critical thinking skills?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are the major challenges faced by the education sector today?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are the primary factors that influence consumer behavior?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are the most effective strategies for conflict resolution in the workplace?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What are some potential implications of using a single-use plastic bottle versus a reusable bottle on both the environment and human health?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "What factors would you consider when designing an inclusive and accessible public transportation system?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How can governments utilize fiscal and monetary policies to combat economic recessions?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How do language and cultural barriers affect the way people communicate and form relationships in multicultural societies?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Describe a scenario where artificial intelligence could be used to improve the quality and efficiency of healthcare delivery."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Explain the process of gene editing using CRISPR-Cas9 technology, and discuss its potential applications and ethical implications."
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How do vaccinations work to protect individuals and communities from infectious diseases, and what is herd immunity?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How do social media platforms influence the way people consume and share news, and what are the potential implications for the spread of misinformation?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "How do cultural, social, and economic factors influence people's food choices, and how can this knowledge be used to promote healthier diets?"
+    },
+    {
+        "class": " Vicuna ",
+        "data": "Explain the process of natural selection and how it contributes to the evolution and adaptation of species."
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the primary source of energy for our planet?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What do humans breathe in?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Is the sun a planet or a star?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What do plants need to grow?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the normal state of water at room temperature?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What do you normally do when you are hungry?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "How many days are there in a week?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the color of the sky on a clear day?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Who wrote the novel \"To Kill a Mockingbird\"?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Who is known as the Father of Computers?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What does a thermometer measure?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Which animal is known as man's best friend?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What color do you get when you mix blue and yellow?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the capital of the United States?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What type of animals are dolphins?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Who is the author of the Harry Potter series?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Who painted the Mona Lisa?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "How many zeros are there in one thousand?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Which planet is known as the Red Planet?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the most common gas in Earth's atmosphere?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "How many hours are there in a day?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Who was the first person to walk on the moon?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What do bees produce?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Where does a bird typically live?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What musical instrument has 88 keys?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the largest ocean on Earth?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "Which meal is usually eaten in the morning?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the primary language spoken in Brazil?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What do fish use to breathe underwater?"
+    },
+    {
+        "class": " Commonsense-Easy ",
+        "data": "What is the boiling point of water at sea level in Celsius?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the phenomenon that causes the change in pitch heard when a vehicle sounding a horn approaches and recedes from an observer?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Can you explain the difference between a meteor and a meteorite?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the primary function of a capacitor in an electrical circuit?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Why is it risky to look directly at a solar eclipse?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does photosynthesis benefit animals?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Why is the preservation of the Amazon rainforest important for the global climate?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the primary difference between a democracy and a dictatorship?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the function of red blood cells in the human body?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does a rainbow form?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Why does ice float on water?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the significance of the Turing Test?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the Pythagorean Theorem, and what is its significance?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does the greenhouse effect contribute to global warming?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the role of the mitochondria in a cell?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the primary function of the Internet Protocol (IP)?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Explain the difference between renewable and non-renewable resources."
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Why do we perceive the sky as blue during the daytime?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the difference between classical and quantum physics?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How do vaccines protect against diseases?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the Doppler effect and where is it commonly observed?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Why are coral reefs important to marine ecosystems?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the difference between RAM and ROM in a computer?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does a 4-stroke internal combustion engine work?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "Why is aerobic exercise important for heart health?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does the tilt of the Earth's axis affect seasons?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the principle behind the operation of a microwave oven?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does a prism disperse white light into its component colors?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What are the primary differences between DNA and RNA?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "How does the circulatory system and respiratory system work together in the human body?"
+    },
+    {
+        "class": " Commonsense-Moderate ",
+        "data": "What is the basic principle of operation of a solar panel?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the capital of Australia?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who is the author of \"Pride and Prejudice\"?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "In what year did the first man land on the moon?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the chemical symbol for Gold?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who painted the \"Mona Lisa\"?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who developed the theory of relativity?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What's the highest mountain in the world?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the largest ocean on Earth?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the process of photosynthesis?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "In what year was the United Nations founded?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the square root of 81?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who won the Nobel Prize for Literature in 2020?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "How many days are there in a leap year?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who invented the telephone?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the longest river in the world?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who composed the Fifth Symphony?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Which planet is known as the \"Red Planet\"?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What does DNA stand for?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who was the 16th President of the United States?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the capital of Canada?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the primary language spoken in Brazil?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who wrote the play \"Romeo and Juliet\"?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the currency of Japan?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the freezing point of water in Fahrenheit?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who discovered penicillin?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What are the three primary colors?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the largest desert in the world?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "What is the closest star to Earth, other than the Sun?"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "Who is the current Queen of the United Kingdom? (as of 2021)"
+    },
+    {
+        "class": " World Knowledge-Easy ",
+        "data": "In computing, what does \"HTTP\" stand for?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What's the second law of thermodynamics?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the fundamental theorem of calculus?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who won the Nobel Prize in Physics in 2021?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who is known as the father of modern linguistics?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the G\u00f6del's Incompleteness Theorem?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who proposed the concept of \"creative destruction\" in economics?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the meaning of \"Schadenfreude\" in German?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What are the four fundamental forces of nature?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the term for the fear of the number 13?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the primary function of the hypothalamus in the human brain?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the Heisenberg Uncertainty Principle?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the significance of the Magna Carta in British history?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who is the author of the philosophical work \"Thus Spoke Zarathustra\"?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the chemical formula for photosynthesis?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who was the Prime Minister of the United Kingdom in 1940?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who is considered the father of modern taxonomy?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the theory of \"Punctuated Equilibrium\" in evolutionary biology?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who is the author of the book \"One Hundred Years of Solitude\"?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the Nash Equilibrium in game theory?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What does the term \"quasar\" mean in astronomy?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the Fibonacci sequence and who discovered it?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who wrote the opera \"The Magic Flute\"?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who is the author of \"The Interpretation of Dreams\"?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the principle of \"Pareto Efficiency\" in economics?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the setting of the novel \"Crime and Punishment\"?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who discovered the law of universal gravitation?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the Dirac Equation in quantum mechanics?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "Who is the author of the poem \"The Raven\"?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the Riemann Hypothesis in mathematics?"
+    },
+    {
+        "class": " World Knowledge-Difficult ",
+        "data": "What is the Turing Test in artificial intelligence?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the speed of light in a vacuum?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is Newton's second law of motion?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Define the principle of superposition in wave theory."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the difference between velocity and speed?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the unit of force in the SI system?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the law of conservation of energy?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the function of a resistor in an electrical circuit?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Explain Ohm's Law."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Define wavelength and frequency in the context of light waves."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the difference between a scalar and a vector?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the first law of thermodynamics?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the principle of conservation of momentum?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the difference between nuclear fission and nuclear fusion?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What are the three types of radioactive decay?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the Heisenberg Uncertainty Principle?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Explain the concept of wave-particle duality."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the Fermi Paradox and what are some proposed solutions to it?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "How does quantum entanglement work and what are its implications for information transfer?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "How does the Casimir effect demonstrate the existence of quantum vacuum fluctuations?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Explain the concept of time dilation in special relativity."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What are the main interpretations of quantum mechanics and how do they differ?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "How do black holes evaporate according to Hawking radiation theory?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "How does superconductivity work and what are its practical applications?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "How does the Higgs field give particles their mass?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What are the key principles of string theory?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What are gravitational waves and how are they detected?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Explain the double-slit experiment and its significance in quantum mechanics."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the difference between a baryonic and non-baryonic dark matter?"
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "Explain the concept of symmetry breaking in particle physics."
+    },
+    {
+        "class": " Professional Knowledge-Physics ",
+        "data": "What is the significance of the Planck scale in quantum gravity?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the function of mitochondria in a cell?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the process of photosynthesis?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is DNA and what role does it play in living organisms?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What are the four main types of macromolecules found in living organisms?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the difference between prokaryotes and eukaryotes?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "Explain the process of mitosis."
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the function of hemoglobin in the blood?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the difference between a gene and an allele?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the structure of a typical neuron?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the biological role of proteins?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the difference between a genotype and a phenotype?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is natural selection?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the function of the endoplasmic reticulum in a cell?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What are the four types of tissues in the human body?"
+    },
+    {
+        "class": " Professional Knowledge-Biology ",
+        "data": "What is the role of ATP in cellular metabolism?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the Pythagorean theorem?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Simplify the expression: 2x + 3x - 5x."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Solve for x in the equation: 2x - 3 = 7."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the formula for the area of a circle?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the derivative of the function f(x) = x^2?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the sum of the interior angles of a triangle?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the formula to find the volume of a sphere?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What does it mean for a number to be prime?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Convert the fraction 3/4 to a decimal."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the integral of the function f(x) = x^2?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the difference between a rational and an irrational number?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the value of pi to 3 decimal places?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Simplify the expression: (a^2)^3."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the midpoint formula in a two-dimensional plane?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Solve for x in the equation: log(x) = 2."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the Taylor series expansion of the function e^x?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Solve the differential equation dy/dx = xy."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Find the eigenvalues of the matrix [[3, 1], [2, 4]]."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Prove the binomial theorem: (x+y)^n = \u03a3 (from k=0 to n) [nCk * x^(n-k) * y^k]."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is Green's theorem in vector calculus?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Explain the concept of a group in abstract algebra."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Prove that the square root of 2 is irrational."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "How do you solve a system of linear equations using Gaussian elimination?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the definition of a limit in calculus?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Explain the concept of mathematical induction."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the Riemann Hypothesis?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "How do you calculate the determinant of a matrix?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What is the fundamental theorem of algebra?"
+    },
+    {
+        "class": " Ability Math ",
+        "data": "Explain the concept of a vector space in linear algebra."
+    },
+    {
+        "class": " Ability Math ",
+        "data": "What are the axioms of probability in statistics?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If all dogs bark and Rover is a dog, does Rover bark?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If it is raining, the ground is wet. The ground is not wet. Is it raining?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "You are driving a bus. At the first stop, 4 people get on. At the next stop, 3 get off and 5 get on. At the third stop, 2 get off and 2 get on. How many people are on the bus now?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "John is taller than Mary. Mary is taller than Peter. Who is the tallest?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If every cat chases a mouse and Tom is a cat, who does Tom chase?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "What comes next in this series: 2, 4, 8, 16, __?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If a fruit basket has only apples and oranges, and you know there is at least one apple in it, can you say the basket contains only apples?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "John's father is twice as old as John. 10 years ago, he was three times as old. How old is John now?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "What is the next number in the sequence: 1, 1, 2, 3, 5, 8, __?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "You have two buckets, one with red paint and one with blue paint. You take one cup from the red bucket and pour it into the blue bucket. Then you take one cup from the blue bucket and pour it back into the red bucket. Which is true: the red bucket has more blue paint, or the blue bucket has more red paint?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If you have two US quarters, three dimes, and four nickels, how much money do you have in total?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If a train leaves a station and travels at 60 miles per hour, how far will it be from the station after 2.5 hours?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "Can a man living in New York be buried west of the Mississippi River?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "What is the minimum number of times a week can a person's birthday occur?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "A bat and a ball together cost $1.10. The bat costs $1.00 more than the ball. How much does the ball cost?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If there are 5 apples and you take away 3, how many do you have?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If a farmer has 17 sheep and all but 9 die, how many are left?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If you're running a race and you pass the person in 2nd place, what place are you in?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "A man builds a house with all 4 sides facing south. A bear walks past the house. What color is the bear?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If you have a bee in your hand, what's in your eye?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "Which weighs more: a pound of feathers or a pound of bricks?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If three children share 49 toys equally, how many toys does each child have?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "You have two coins that add up to 15 cents and one of the coins is not a nickel. What are the coins?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If a red house is made from red bricks, and a blue house is made from blue bricks, what is a greenhouse made from?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "How many times can you subtract 5 from 25?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "How many cubic feet of dirt are there in a hole that is 3 feet deep, 3 feet wide, and 3 feet long?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If it takes 8 men 10 hours to build a wall, how long would it take 4 men to build the same wall?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "A plane crashes on the border of the U.S. and Canada. Where do they bury the survivors?"
+    },
+    {
+        "class": " Ability Reasoning ",
+        "data": "If you drove a bus with 43 people on board from Chicago and stopped at Pittsburgh to pick up 7 more people and drop off 5 passengers, then at your next stop in Philadelphia, you drop off 8 passengers and pick up 4, and eventually arrive in New York later that night to drop off the remainder of your passengers, how many bus drivers are there?"
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short story about gravity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Summarize the concept of quantum mechanics in a paragraph."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a poem about the solar system."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain the concept of time dilation in simple terms."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a blog post about the discovery of the Higgs boson."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a catchy slogan for a physics tutoring service."
+    },
+    {
+        "class": " Writing ",
+        "data": "Compose a rhymed poem about electromagnetism."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short dialogue between two particles experiencing quantum entanglement."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain how a rainbow forms in kid's language."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a haiku about Newton's laws of motion."
+    },
+    {
+        "class": " Writing ",
+        "data": "Narrate a story featuring a character who can control gravity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a simple explanation of Schr\u00f6dinger's cat experiment."
+    },
+    {
+        "class": " Writing ",
+        "data": "Describe what light would look like if we could see it moving at its actual speed."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a simple explanation of Einstein's Theory of Relativity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write an invitation to a physics seminar."
+    },
+    {
+        "class": " Writing ",
+        "data": "Describe how a microwave works in layman's terms."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a paragraph explaining the Big Bang theory for a middle school audience."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a catchy slogan for a quantum computing company."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short story about a journey through a black hole."
+    },
+    {
+        "class": " Writing ",
+        "data": "Describe a day in the life of a photon."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain the concept of entropy to a five-year-old."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a limerick about particle physics."
+    },
+    {
+        "class": " Writing ",
+        "data": "Describe what a wave-particle duality is in simple terms."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a dialogue between the sun and the moon discussing gravity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain the role of physics in everyday life."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short story about the first second of the universe."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a catchy slogan for a company selling telescopes."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a poem about the Northern Lights."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain the Doppler effect using an example from daily life."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short story about a time-traveling physicist."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a blog post about the contributions of Marie Curie."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a simple explanation of dark matter."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a catchy slogan for a physics-based video game."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a children's story about a journey to a parallel universe."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain the concept of weightlessness in space."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a poem about the speed of light."
+    },
+    {
+        "class": " Writing ",
+        "data": "Summarize the life and work of Isaac Newton."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short dialogue between two planets."
+    },
+    {
+        "class": " Writing ",
+        "data": "Explain how a fridge works in simple terms."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a short story about an atom."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a research paper abstract on the recent advancements in string theory."
+    },
+    {
+        "class": " Writing ",
+        "data": "Develop a comprehensive lesson plan to teach quantum physics to high school students."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a feature article on the implications of quantum computing for cybersecurity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a dialogue between Albert Einstein and Nikola Tesla discussing their respective theories."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a detailed business plan for a start-up based on quantum technology."
+    },
+    {
+        "class": " Writing ",
+        "data": "Compose a speculative fiction story on the societal implications of mastering cold fusion."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write an in-depth review of a recent academic paper on gravitational waves."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a detailed step-by-step guide on how to set up a particle accelerator."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write an epic poem describing the process of a star going supernova."
+    },
+    {
+        "class": " Writing ",
+        "data": "Develop a comprehensive overview of the pros and cons of nuclear energy."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a detailed blog post about the challenges and benefits of space travel."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a comprehensive lesson plan to teach the general theory of relativity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a dialogue between two fundamental particles in the Large Hadron Collider."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a detailed essay on the role of physics in climate change."
+    },
+    {
+        "class": " Writing ",
+        "data": "Compose a set of haikus that, when combined, explain the process of nuclear fusion."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a speculative fiction story about a world where the laws of physics are slightly different."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a deep dive article on the implications of the many-worlds interpretation of quantum mechanics."
+    },
+    {
+        "class": " Writing ",
+        "data": "Compose a comprehensive explanation of the four fundamental forces of physics."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a dialogue between two black holes about to merge."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a detailed essay on the physics behind GPS technology."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a detailed blog post about the challenges and future of quantum cryptography."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a comprehensive lesson plan to teach the special theory of relativity."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write an in-depth review of a recent academic paper on quantum entanglement."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a speculative fiction story about a world where time travel is possible."
+    },
+    {
+        "class": " Writing ",
+        "data": "Develop a conceptual explanation of the theory of everything."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a detailed essay on the role of physics in understanding the origins of the universe."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a dialogue between two photons traveling at light speed."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a blog post about the role of physics in sustainable development."
+    },
+    {
+        "class": " Writing ",
+        "data": "Create a catchy slogan for a company that's researching practical applications of quantum entanglement."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a comprehensive overview of the theories and evidence for the existence of dark matter and dark energy."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a speculative fiction story about a society that has mastered quantum teleportation."
+    },
+    {
+        "class": " Writing ",
+        "data": "Develop a detailed lesson plan to teach the concepts of string theory."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a comprehensive review of a recent academic paper on neutrino physics."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write an in-depth blog post about the role of physics in artificial intelligence."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a dialogue between a gravitational wave and a light wave."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a detailed essay on how quantum mechanics influences biological processes."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a blog post about the implications of zero-point energy."
+    },
+    {
+        "class": " Writing ",
+        "data": "Develop a comprehensive lesson plan to teach the principles of thermodynamics."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write an in-depth review of a recent academic paper on the Higgs boson."
+    },
+    {
+        "class": " Writing ",
+        "data": "Write a speculative fiction story about a society that has discovered how to manipulate the fundamental forces of nature."
+    }
+]
