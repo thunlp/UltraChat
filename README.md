@@ -4,9 +4,9 @@
 
 <div align="center">
 
-<img src="https://i.328888.xyz/2023/03/31/iwfiBd.png" width="200px">
+<img src="https://i.328888.xyz/2023/03/31/iwfiBd.png" width="250px">
 
-**Large-scale, Informative, and Diverse Multi-round Dialogue Data**
+**Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models**
 
 <p align="center">
  <a href="#UltraLM">UltraLM</a> •
@@ -23,10 +23,7 @@
 
 ![Dialogues](https://img.shields.io/badge/Current\_Dialogues-1.57M-red?style=flat-square)
 ![Dialogues](https://img.shields.io/badge/UltraLM\_13B-Released-blue?style=flat-square)
-![Dialogues](https://img.shields.io/badge/Questions\_about\_the\_Wolrd-Released-green?style=flat-square)
-![Dialogues](https://img.shields.io/badge/Writing\_and\_Creation-Released-green?style=flat-square)
-![Dialogues](https://img.shields.io/badge/Assistance\_on\_Existent\_Materials-Released-green?style=flat-square)
-
+![Dialogues](https://img.shields.io/badge/UltraChat-Released-green?style=flat-square)
 
 </div>
 
@@ -46,6 +43,7 @@ We report three evaluations in this section: Alpaca-Eval from Stanford, Evol-ins
 #### Alpaca-Eval
 
 [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) is a leaderboard specifically designed for evaluating LLMs. The leaderboard is created based on the win-rate against Text-Davince-003 automatically evaluated by GPT-4.
+
 #### Evol-instruct
 
 This dataset is constructed with an evolutionary strategy by rewriting the instructions through multiple rounds to obtain instructions at different complexity levels. The benchmark is developed by the [WizardLM project](https://github.com/nlpxucan/WizardLM), another excellent chat language model!
