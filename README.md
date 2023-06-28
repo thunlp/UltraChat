@@ -28,6 +28,18 @@
 </div>
 
 
+## News
+
+- June 28, 2023: 🔥 **UltraLM-13B ranks #1 among open-source models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)!**
+- June 27, 2023: 🔥 **We release the first version of UltraLM-13B, a powerful chat language model trained on UltraChat!**
+- April 20, 2023: Released all data, more processing and additional data are expected.
+- April 17, 2023: The rest of the Writing and Creation sector is released (457k). 
+- April 12, 2023: The first part of the Writing and Creation sector is released.
+- April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have an [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
+- April 8, 2023: We release a training script by taking GPT-J as an example.
+- April 7, 2023: The second part of Questions about the World is released. It contains 290k generated multi-round dialogues.
+- March 31, 2023: The first part of Questions about the World is released. It contains 280k generated multi-round dialogues.
+
 ## UltraLM
 
 UltraLM is a series of chat language models trained on UltraChat. Currently, we have released the 13B version, which **ranks #1** among open-source models and **ranks #4** among all models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/). UltraLM-13B is based upon LLaMA-13B.
@@ -43,6 +55,8 @@ We report three evaluations in this section: Alpaca-Eval from Stanford, Evol-ins
 #### Alpaca-Eval
 
 [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) is a leaderboard specifically designed for evaluating LLMs. The leaderboard is created based on the win-rate against Text-Davince-003 automatically evaluated by GPT-4.
+
+<img src="figures/alpaca.png" width="550px">
 
 #### Evol-instruct
 
@@ -143,6 +157,8 @@ To reconstruct UltraLM, please download LLaMA-13B and our Delta weights. Then, r
   > **UltraLM:**  In the first second of the universe, darkness reigned supreme. There was no light, no sound, no shape, no substance. Nothing yet was, but there was an intense power, a raw energy waiting to be unleashed. Within infinity, the first second held the potential for creation in its grasp. And then, with a mighty bang, a bright point of light emerged into existence. In it, the most fundamental particles were born, their forms yet unknown as they frenetically collided in a chaotic dance of creation. Within this primordial light, every force of nature and every component of life was stirred from pure energy to physical reality. The first atoms quickly assembled, and from these, stars and galaxies began to form. Their fusion creating a hot environment that pushed back the very void, shaping the cosmos through expanding and cooling waves. In this cosmic first, no structure of experience, not even time or space, could establish its rule. For an instant, the entirety of the universe existed in an embryonic nexus, a cosmic singularity from which all future existence originated. It was a microcosm forging the macrocosm of which it ultimately becomes a part, its moment of birth a metaphor for the cycles of creation that permeate the multiverse(s).From that single point of light, an infinite universe unfolded. For centuries, eons ahead, and forevermore, it remained the most foundational blink of its unceasing journey into the depths of the Great Beyond. The first second is the beginning of everything.
 </p>
 </details>
+
+
 
 
 ## Overview of UltraChat
@@ -292,15 +308,7 @@ We will specify the construction process once a sector of UltraChat is released.
 
 
 
-## News
 
-- April 20, 2023: Released all data, more processing and additional data are expected.
-- April 17, 2023: The rest of the Writing and Creation sector is released (457k). 
-- April 12, 2023: The first part of the Writing and Creation sector is released.
-- April 9, 2023: Supported by [gpt4all](https://github.com/nomic-ai/gpt4all), we now also have an [Atlas explorer](https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac)
-- April 8, 2023: We release a training script by taking GPT-J as an example.
-- April 7, 2023: The second part of Questions about the World is released. It contains 290k generated multi-round dialogues.
-- March 31, 2023: The first part of Questions about the World is released. It contains 280k generated multi-round dialogues.
 
 ## To Do
 - [x] Release the rest part of the data for Questions about the World.
