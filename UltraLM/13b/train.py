@@ -1,21 +1,32 @@
+
 import argparse
 import torch
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from ultrachat_dataset import load_raw_data, PromptIterableDataset, collator
-from transformers.optimization import get_linear_schedule_with_warmup
+from data_utils import load_raw_data, PromptIterableDataset, collator
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 import bmtrain as bmt
 from functools import partial
 import time
 import os
-import wandb
+
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:128"
 
 def get_model_tokenizer(args):
+    print("loading model...")
     model = LlamaForCausalLM.from_pretrained(args.model_name_or_path)
+    if args.start_step != 0:
+        print(f"loading model from step {args.start_step}")
+        bmt.load(model, os.path.join(args.save_dir, f"{args.model}/step_{args.start_step}/checkpoint.pt"))
+
     tokenizer = LlamaTokenizer.from_pretrained(args.model_name_or_path)
-    tokenizer.add_special_tokens({'pad_token': "<pad>"})
-    model.resize_token_embeddings(len(tokenizer))
+    if args.start_step != 0:
+        tokenizer = LlamaTokenizer.from_pretrained(os.path.join(args.save_dir, f"{args.model}/step_{args.start_step}"))
+    if tokenizer.pad_token is None:
+        tokenizer.add_special_tokens({'pad_token': "<pad>"})
+        model.resize_token_embeddings(len(tokenizer))
+    print("loaded")
+    
     model = bmt.BMTrainModelWrapper(model)
     return model, tokenizer
 
@@ -23,6 +34,13 @@ def get_optimizer(args, model):
     optimizer = bmt.optim.AdamOffloadOptimizer(
         model.parameters(), weight_decay=args.weight_decay
     )
+    if args.start_step != 0:
+        file_name = os.path.join(os.path.join(args.save_dir, f"{args.model}/step_{args.start_step}"), "optim.rank-{}.opt".format(bmt.rank()))
+        print(file_name)
+        if os.path.exists(file_name):
+            print("start to load grad ckpt {}".format(file_name))
+            states = torch.load(file_name)
+            optimizer.load_state_dict(states)
     return optimizer
 
 
@@ -58,6 +76,9 @@ def get_learning_rate_scheduler(args, optimizer):
         )
     else:
         raise NotImplementedError
+    if args.start_step != 0:
+        print(f"loading scheduler from step {args.start_step}")
+        lr_scheduler.load_state_dict(torch.load(os.path.join(args.save_dir, f"{args.model}/step_{args.start_step}/scheduler.pt")))
     return lr_scheduler
 
 
@@ -78,9 +99,6 @@ def train(args):
         zero_level=3,
     )
 
-    if args.wandb and bmt.rank() == 0:
-        wandb.init()
-    
     if args.tensorboard is not None and bmt.rank() == 0:
         from torch.utils.tensorboard import SummaryWriter
         import distutils.version  # noqa: F401
@@ -94,19 +112,18 @@ def train(args):
     optim_manager.add_optimizer(optimizer, lr_scheduler)
 
     bmt.synchronize()
-
-    original_dataset = load_raw_data(args.data_file)
-    print("total training instance number:", len(original_dataset))
-    
-
+    original_dataset = load_raw_data(args.data_dir, max_sample=args.max_sample, random_state=0)
 
     bmt.print_rank("Model memory")
     bmt.print_rank(torch.cuda.memory_summary())
 
     avg_time_recorder = bmt.utils.AverageRecorder()
     avg_loss_recorder = bmt.utils.AverageRecorder()
-
+    train_start_time = time.time()
     global_step = 0
+
+    loss_func = bmt.loss.FusedCrossEntropy(ignore_index=-100)
+    
     for epoch in range(args.epochs):
         indices = torch.randperm(len(original_dataset))
         dataset = [original_dataset[i] for i in indices]
@@ -122,13 +139,26 @@ def train(args):
         progress_bar = tqdm(range(len(dataloader)), disable=not bmt.rank()==0, desc=f"epoch {epoch}")
 
         for step, inputs in enumerate(dataloader):
+            if global_step < args.start_step:
+                global_step += 1
+                continue
+
             st = time.time()
 
             with bmt.inspect.inspect_tensor() as inspector:
                 for k in inputs:
                     inputs[k] = inputs[k].cuda()
-                output = model(**inputs)
-                loss = output.loss
+                labels = inputs.pop("labels")
+                logits = model(**inputs).logits
+
+                shift_logits = logits[..., :-1, :].contiguous()
+                shift_labels = labels[..., 1:].contiguous()
+                # Flatten the tokens
+                shift_logits = shift_logits.view(-1, len(tokenizer))
+                shift_labels = shift_labels.view(-1)
+                # Enable model parallelism
+                shift_labels = shift_labels.to(shift_logits.device)
+                loss = loss_func(shift_logits, shift_labels)
             
                 global_loss = bmt.sum_loss(loss).item()
 
@@ -154,20 +184,16 @@ def train(args):
             # print time and loss
             if global_step % args.logging_step == 0:
                 bmt.print_rank(
-                    "| Iter: {:6d} | loss: {:.4f} average_loss: {:.4f} | lr: {:.4e} | time: {:.4f}".format(
+                    "| Iter: {:6d} | loss: {:.4f} average_loss: {:.4f} | lr: {:.4e} | time: {:.4f} seconds | total_time_passed: {:.4f} minutes".format(
                         global_step,
                         global_loss,
                         avg_loss_recorder.value,
                         lr_scheduler.current_lr,
-                        avg_time_recorder.value
+                        avg_time_recorder.value,
+                        (time.time() - train_start_time) / 60
                     )
                 )
-                if args.wandb and bmt.rank() == 0:
-                    wandb.log({
-                        "loss": global_loss,
-                        "average_loss": avg_loss_recorder.value,
-                        "lr": lr_scheduler.current_lr,
-                    }, step=global_step)
+
                 if args.tensorboard and bmt.rank() == 0:
                     writer.add_scalar("Loss/train", global_loss, global_step)
                     writer.add_scalar("average_Loss/train", avg_loss_recorder.value, global_step)
@@ -176,26 +202,31 @@ def train(args):
 
             # save model
             if global_step % args.save_step == 0:
-                os.makedirs(f"ultrachat_{args.model}/step_{global_step}", exist_ok=True)
+                save_dir = os.path.join(args.save_dir, f"{args.model}/step_{global_step}")
+                os.makedirs(save_dir, exist_ok=True)
 
-                bmt.save(model, f"ultrachat_{args.model}/step_{global_step}/checkpoint.pt")
+                bmt.save(model, os.path.join(save_dir, "checkpoint.pt"))
+                print("saving optimizer state", os.path.join(save_dir, "optim.rank-%d.opt" % bmt.rank()))
+                torch.save(optimizer.state_dict(), os.path.join(save_dir, "optim.rank-%d.opt" % bmt.rank()))
 
                 if bmt.rank() == 0:
-                    torch.save(optimizer.state_dict(), f"ultrachat_{args.model}/step_{global_step}/optimizer.pt")
-                    torch.save(lr_scheduler.state_dict(), f"ultrachat_{args.model}/step_{global_step}/scheduler.pt")
+                    torch.save(lr_scheduler.state_dict(), os.path.join(save_dir, "scheduler.pt"))
+                    tokenizer.save_pretrained(save_dir)
+                bmt.print_rank(f"model saved at {save_dir}")
             
             if global_step == args.train_iters:
                 break
-    
-    bmt.save(model, f"ultrachat_{args.model}/final.pt")
 
+    if bmt.rank() == 0:
+        bmt.save(model, os.path.join(args.save_dir, f"{args.model}/final.pt"))
+        tokenizer.save_pretrained(os.path.join(args.save_dir, f"{args.model}"))
   
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("")
     parser.add_argument("--lr", type=float, default=1e-5)
-    parser.add_argument("--model", type=str, default='llama')
-    parser.add_argument("--model_name_or_path", default='/path/to/huggingface/llama')
+    parser.add_argument("--model", type=str, default='ultralm-13b', help="a short name for this training")
+    parser.add_argument("--model_name_or_path", default='/llama-13b', help="pretrained huggingface llama path")
     parser.add_argument("--epochs", default=3, type=int)
     parser.add_argument("--seed", default=0, type=int)
 
@@ -203,7 +234,8 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size_per_device", default=2, type=int)
     parser.add_argument("--logging_step", default=100, type=int)
     parser.add_argument("--save_step", default=50000, type=int)
-    parser.add_argument("--data_file", default="../data/processed/data.json", type=str)
+    parser.add_argument("--data_dir", default="../data/processed", type=str)
+
     parser.add_argument("--gradient_accumulation_steps", default=1, type=int)
     parser.add_argument("--wandb", action="store_true")
     parser.add_argument("--with_eval", action="store_true")
@@ -214,6 +246,13 @@ if __name__ == "__main__":
     parser.add_argument("--loss-scale", type=float, default=65536, help="loss scale")
 
     parser.add_argument("--train-iters", type=int, default=2000000)
+
+    parser.add_argument("--save_dir", type=str, default="/data/models")
+
+    parser.add_argument("--max_sample", type=int, default=None, help="maximum training sample number")
+    parser.add_argument("--debug", default=False, action="store_true")
+
+
 
 
     parser.add_argument(
