@@ -1,7 +1,7 @@
 # Training LLaMA-13B
 
 ## Data Preparation
-- download [UltraChat](https://github.com/thunlp/UltraChat#data-release) data in jsonline format and put under `../data/raw`
+- download and unzip [UltraChat](https://github.com/thunlp/UltraChat#data-release) data in `.json` or `.jsonl` format and put under `../data/raw`
 - run the script according to `../data/process.sh` to split the data into chunks with maximum length of 2048, save the processed data in `../data/processed`
 
 ## Train

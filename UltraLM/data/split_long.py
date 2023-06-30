@@ -31,16 +31,12 @@ def split_one_sample(sample):
     tokenized_lens = []
     conversations = sample["data"]
     assert len(conversations) %2 == 0, print(conversations)
-    # conversations = conversations[: len(conversations) // 2 * 2]
     for c in conversations:
         length = len(tokenizer(c).input_ids) + 6
         tokenized_lens.append(length)
 
     start_idx = 0
     cur_len = 0
-
-    # if len(conversations) % 2 != 0 or len(conversations) < 2:
-    #     return []
 
     new_samples = []
     for i in range(0, len(conversations), 2):

@@ -2,7 +2,7 @@
 import argparse
 import torch
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from data_utils import load_raw_data, PromptIterableDataset, collator
+from util.data_utils import load_raw_data, PromptIterableDataset, collator
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 import bmtrain as bmt
