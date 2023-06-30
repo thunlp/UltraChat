@@ -1,0 +1,1 @@
+python -u inference_cli.py --model_path /data/ultrallama/ultrachat_llama-13b-fulldata-8500_hf-recover
