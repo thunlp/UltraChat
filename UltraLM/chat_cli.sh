@@ -1,0 +1,1 @@
+python -u inference_cli.py --model_path /path/to/ultralm/recovered
