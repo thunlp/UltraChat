@@ -175,7 +175,7 @@ We instruct the user model with carefully designed prompts to mimic human user b
 - 📋 **Assistance on Existent Materials**: The dialogue data in this sector is generated based on existing materials, including but not limited to rewriting, continuation, summarization, and inference, covering a diverse range of topics.
 
 
-*Please note that current released data is still not the final version. We are conducting extensive post-processing to reduce hallucination and ensure coherence to further improve the data quality.*
+*Disclaimer: Although the process of building UltraChat does NOT involve any publicly available benchmark data, scaling to a certain extent may still result in some overlap in some evaluation benchmarks. We encourage users to closely monitor such phenomenon, while we are also actively considering how to evaluate LLMs more properly.*
 
 <details><summary> <b>An Example of UltraChat </b> </summary>
 <p>
