@@ -9,12 +9,12 @@
 **Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models**
 
 <p align="center">
- <a href="#UltraLM">UltraLM</a> •
+ <a href="#UltraLM"> UltraLM</a> •
   <a href="http://39.101.77.220/">Data Explorer</a> •
   <a href="https://atlas.nomic.ai/map/0ce65783-c3a9-40b5-895d-384933f50081/a7b46301-022f-45d8-bbf4-98107eabdbac">Nomic AI Atlas Explorer</a> •
   <a href="#data">Data Release</a> •
   <a href="#construction-of-ultrachat">Construction Process</a> •
-    <a href="https://arxiv.org/abs/2305.14233">Paper</a> •
+    <a href="https://arxiv.org/abs/2305.14233">Paper</a>
 </p>
 
 </div>
@@ -43,7 +43,6 @@
 ## UltraLM
 
 UltraLM is a series of chat language models trained on UltraChat. Currently, we have released the 13B version, which **ranks #1** among open-source models and **ranks #4** among all models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/). UltraLM-13B is based upon LLaMA-13B.
-
 
 
 <details><summary> <b> Performance </b> </summary>
@@ -81,9 +80,10 @@ We curate an evaluation set, encompassing the [Vicuna Benchmark](https://lmsys.o
 
 #### Download
 
-| Model  |  Link | #Parameters | Online Demo
-| ------------- | ------------- |------------- |------------- |
-| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |13 Billion|To Do|
+| Model  |  Link | Version |Online Demo |
+| ------------- | ------------- |------------- |------------- | 
+| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |v1.0|To Do|
+
 
 
 #### Use UltraLM
@@ -321,9 +321,8 @@ We will specify the construction process once a sector of UltraChat is released.
 
 
 ## Limitations
+- Although UltraChat could perform promisingly on several benchmarks, it still has limitations such as hallucinations. In our experience, UltraLM could handle questions in terms of world knowledge and creation. The reasoning, math, and coding abilities still need to be explicitly enhanced.
 
-- Auto-generated data may contain hallucination and other formats of false facts. This issue will mainly appear in the first sector of the data. 
-- To address the issue, more extensive post-processing will be conducted.
 
 ## Citation
 Feel free to cite the repo if you think UltraChat is useful.
