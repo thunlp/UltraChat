@@ -88,9 +88,9 @@ We curate an evaluation set, encompassing the [Vicuna Benchmark](https://lmsys.o
 
 #### Use UltraLM
 
-To reconstruct UltraLM, please download LLaMA-13B and our Delta weights. Then, run the script in `/UltraLM/recover.sh`.
-
-After obtaining the recoverd model, replace model path in `/UltraLM/chat_cli.sh` with you path and run to start chatting!
+- To reconstruct UltraLM, please download LLaMA-13B and our Delta weights. Please use this [link](https://huggingface.co/openbmb/UltraLM-13b) if you would like to test UltraLM, we haven't evaluated other weights provided by third parties.
+- Run the script in `/UltraLM/recover.sh` to obtain the final weights of the recovered model.
+- After obtaining the recovered model, replace the model path in `/UltraLM/chat_cli.sh` with your path and run to start chatting!
 
 *Note: Different hyper-parameters or system prompts will affect the outputs. You can refer to details in `/UltraLM/inference_cli.py` for our default setting.*
 
