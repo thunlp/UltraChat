@@ -42,14 +42,31 @@
 
 ## UltraLM
 
-UltraLM is a series of chat language models trained on UltraChat. Currently, we have released the 13B version, which **ranks #1** among open-source models and **ranks #4** among all models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/). UltraLM-13B is based upon LLaMA-13B.
+UltraLM is a series of chat language models trained on UltraChat. Currently, we have released the 13B version, which **ranks #1** among open-source models and **ranks #4** among all models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) (June 28, 2023). 
+UltraLM-13B is based upon LLaMA-13B and supported by [BMTrain](https://github.com/OpenBMB/BMTrain) in the training process.
+
+#### Download
+
+| Model  |  Link | Version |Online Demo |
+| ------------- | ------------- |------------- |------------- | 
+| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |v1.0|To Do|
+
+
+
+#### Use UltraLM
+
+- To reconstruct UltraLM, please download LLaMA-13B and our Delta weights. Please use this [link](https://huggingface.co/openbmb/UltraLM-13b) if you would like to test UltraLM, we haven't evaluated other weights provided by third parties.
+- Run the script in `/UltraLM/recover.sh` to obtain the final weights of the recovered model.
+- After obtaining the recovered model, replace the model path in `/UltraLM/chat_cli.sh` with your path and run to start chatting!
+
+*Note: Different hyper-parameters or system prompts will affect the outputs. You can refer to details in `/UltraLM/inference_cli.py` for our default setting.*
 
 
 <details><summary> <b> Performance </b> </summary>
 <p>
 
-
 We report three evaluations in this section: Alpaca-Eval from Stanford, Evol-instruct from Microsoft's WizardLM, and our curated evaluation set.
+Evaluations of modern LLMs may be biased and affected by many factors, we are also actively working on more comprehensive evaluation methods.
 
 #### Alpaca-Eval
 
@@ -74,25 +91,6 @@ We curate an evaluation set, encompassing the [Vicuna Benchmark](https://lmsys.o
 
 </p>
 </details>
-
-
-
-
-#### Download
-
-| Model  |  Link | Version |Online Demo |
-| ------------- | ------------- |------------- |------------- | 
-| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |v1.0|To Do|
-
-
-
-#### Use UltraLM
-
-- To reconstruct UltraLM, please download LLaMA-13B and our Delta weights. Please use this [link](https://huggingface.co/openbmb/UltraLM-13b) if you would like to test UltraLM, we haven't evaluated other weights provided by third parties.
-- Run the script in `/UltraLM/recover.sh` to obtain the final weights of the recovered model.
-- After obtaining the recovered model, replace the model path in `/UltraLM/chat_cli.sh` with your path and run to start chatting!
-
-*Note: Different hyper-parameters or system prompts will affect the outputs. You can refer to details in `/UltraLM/inference_cli.py` for our default setting.*
 
 <details><summary> <b> Examples of UltraLM </b> </summary>
 <p>
@@ -163,19 +161,25 @@ We curate an evaluation set, encompassing the [Vicuna Benchmark](https://lmsys.o
 
 
 
+
 ## Overview of UltraChat
 This project aims to construct *open-source, large-scale, and multi-round* dialogue data powered by Turbo APIs to facilitate the construction of powerful language models with general conversational capability.
 In consideration of factors such as safeguarding privacy, **we do not directly use any data available on the Internet as prompts**.
-To ensure generation quality, two separate ChatGPT Turbo APIs are adopted in generation, where one plays the role of the user to generate queries and the other generates the response. 
-We instruct the user model with carefully designed prompts to mimic human user behavior and call the two APIs iteratively. The generated dialogues undergo further post-processing and filtering.
-<img align="bottom" src="https://i.328888.xyz/2023/03/31/iwIdSt.png" width="80px"> is composed of three sectors:
+
+<details><summary> <b>  <img align="bottom" src="https://i.328888.xyz/2023/03/31/iwIdSt.png" width="80px"> is composed of three sectors </b> </summary>
+<p>
 
 - 🌏 **Questions about the World**: The dialogue data in this sector is derived from a wide range of inquiries related to concepts, entities, and objects from the real world. The topics covered are extensive, spanning areas such as technology, art, and entrepreneurship.
 - ✍🏻 **Writing and Creation**: The dialogue data in this sector is driven by the demands for writing/creation from scratch, and encompasses any tasks that an AI assistant may aid within the creative process, spanning from email composition to crafting narratives and plays, and beyond.
 - 📋 **Assistance on Existent Materials**: The dialogue data in this sector is generated based on existing materials, including but not limited to rewriting, continuation, summarization, and inference, covering a diverse range of topics.
 
 
-*Disclaimer: Although the process of building UltraChat does NOT involve any publicly available benchmark data, scaling to a certain extent may still result in some overlap in some evaluation benchmarks. We encourage users to closely monitor such phenomenon, while we are also actively considering how to evaluate LLMs more properly.*
+</p>
+</details>
+
+*Disclaimer: Although the process of building UltraChat does NOT involve any publicly available benchmark data, scaling to a certain extent may still result in some overlap in some evaluation benchmarks. We would like to emphasize again that **all the data is automatically generated (including the instructions and responses)**, and we do not insert any open benchmark data.
+For example, UltraChat was released (April, 2023) **earlier** than Alpaca Eval (May, 2023).
+We encourage users to closely monitor such phenomena, while we are also actively considering how to evaluate LLMs more properly.*
 
 <details><summary> <b>An Example of UltraChat </b> </summary>
 <p>
