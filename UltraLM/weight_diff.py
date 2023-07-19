@@ -76,7 +76,7 @@ def make_diff(
     tokenizer_raw: transformers.PreTrainedTokenizer = transformers.AutoTokenizer.from_pretrained(
         path_raw
     )
-    if tokenizer_raw.pad_token is None:
+    if tokenizer_raw.pad_token is None and tokenizer_tuned.pad_token is not None:
         print("add pad token")
         smart_tokenizer_and_embedding_resize(
             special_tokens_dict=dict(pad_token="<PAD>"),
@@ -119,7 +119,10 @@ def recover(
     tokenizer_raw: transformers.PreTrainedTokenizer = transformers.AutoTokenizer.from_pretrained(
         path_raw
     )
-    if tokenizer_raw.pad_token is None:
+    tokenizer_recovered: transformers.PreTrainedTokenizer = transformers.AutoTokenizer.from_pretrained(
+        path_diff
+    )
+    if tokenizer_raw.pad_token is None and tokenizer_recovered.pad_token is not None:
         smart_tokenizer_and_embedding_resize(
             special_tokens_dict=dict(pad_token="<PAD>"),
             model=model_raw,
