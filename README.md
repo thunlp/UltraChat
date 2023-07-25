@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://i.328888.xyz/2023/03/31/iwfiBd.png" width="250px">
+<img src="figures/ultra_logo.png" width="250px">
 
 **Large-scale, Informative, and Diverse Multi-round Dialogue Data, and Models**
 
@@ -166,7 +166,7 @@ We curate an evaluation set, encompassing the [Vicuna Benchmark](https://lmsys.o
 This project aims to construct *open-source, large-scale, and multi-round* dialogue data powered by Turbo APIs to facilitate the construction of powerful language models with general conversational capability.
 In consideration of factors such as safeguarding privacy, **we do not directly use any data available on the Internet as prompts**.
 
-<details><summary> <b>  <img align="bottom" src="https://i.328888.xyz/2023/03/31/iwIdSt.png" width="80px"> is composed of three sectors </b> </summary>
+<details><summary> <b>  UltraChat is composed of three sectors </b> </summary>
 <p>
 
 - 🌏 **Questions about the World**: The dialogue data in this sector is derived from a wide range of inquiries related to concepts, entities, and objects from the real world. The topics covered are extensive, spanning areas such as technology, art, and entrepreneurship.
@@ -250,7 +250,7 @@ Each sector of UltraChat has its own challenges and requires particular strategy
 We will specify the construction process once a sector of UltraChat is released.
 
 <div align="center">
-<img src="https://i.328888.xyz/2023/04/26/ivs8gt.png" width="700px">
+<img src="figures/ultra-process.png" width="700px">
 </div>
 
 <details><summary> <b>Questions about the World</b> </summary>
@@ -261,7 +261,7 @@ We will specify the construction process once a sector of UltraChat is released.
 - The data is derived from 30 representative and diverse meta topics (icons are from [flaticon](https://www.flaticon.com/))
 
 <div align="center">
-<img src="https://i.328888.xyz/2023/04/01/i22Zoc.png" width="650px">
+<img src="figures/meta_topic.png" width="650px">
 </div>
 
 - Based on the above meta topics, we generate 1100+ subtopics for data construction

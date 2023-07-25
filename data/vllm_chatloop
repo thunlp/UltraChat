@@ -1,0 +1,27 @@
+from vllm import LLM, SamplingParams
+
+# Sample prompts.
+prompts = [
+    "Hello, my name is",
+    "The president of the United States is",
+    "The capital of France is",
+    "The future of AI is",
+]
+
+sampling_params = SamplingParams(temperature=0.7, top_p=0.95)
+
+# Create an LLM.
+llm = LLM(model="/yinxr/dn/alpaca_eval/model/13b-latest")
+
+# Get user input
+user_input = input("User: ")
+
+# Prepend system prompt to user input
+prompt = "System: " + user_input
+
+# Generate response
+outputs = llm.generate([prompt], sampling_params)
+generated_text = outputs[0].outputs[0].text
+
+# Print response
+print(f"Model: {generated_text!r}")
