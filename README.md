@@ -30,8 +30,9 @@
 
 ## News
 
-- June 28, 2023: 🔥 **UltraLM-13B ranks #1 among open-source models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)!**
-- June 27, 2023: 🔥 **We release the first version of UltraLM-13B, a powerful chat language model trained on UltraChat!**
+- August 7, 2023: Releasing the first version of UltraLM-65B.
+- June 28, 2023: UltraLM-13B ranks #1 among open-source models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)!
+- June 27, 2023: We release the first version of UltraLM-13B, a powerful chat language model trained on UltraChat!
 - April 20, 2023: Released all data, more processing and additional data are expected.
 - April 17, 2023: The rest of the Writing and Creation sector is released (457k). 
 - April 12, 2023: The first part of the Writing and Creation sector is released.
@@ -47,9 +48,11 @@ UltraLM-13B is based upon LLaMA-13B and supported by [BMTrain](https://github.co
 
 #### Download
 
-| Model  |  Link | Version |Online Demo |
-| ------------- | ------------- |------------- |------------- | 
-| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |v1.0|To Do|
+| Model  |  Link | Version |
+| ------------- | ------------- |------------- |
+| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |v1.0|
+| UltraLM-65B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-65b) |v1.0|
+
 
 
 
