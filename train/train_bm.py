@@ -17,7 +17,6 @@ def get_model_tokenizer(args):
     tokenizer.add_special_tokens({'pad_token': "<pad>"})
     model.resize_token_embeddings(len(tokenizer))
     model = bmt.BMTrainModelWrapper(model)
-    bmt.init_parameters(model)
     return model, tokenizer
 
 def get_optimizer(args, model):
