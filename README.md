@@ -29,7 +29,8 @@
 
 
 ## News
-
+- **❗️❗️ Septempber 26, 2023: Releasing a large-scale, fine-grained, diverse preference dataset [UltraFeedback](https://github.com/thunlp/UltraFeedback), [UltraLM-13B-v2.0](https://huggingface.co/openbmb/UltraLM-13b-v2.0),reward model [UltraRM](https://huggingface.co/openbmb/UltraRM-13b) and critic model [UltraCM](https://huggingface.co/openbmb/UltraCM-13b).**
+- **❗️❗️With UltraRM, a simple best-of-16 sampling achieves 92.30% (UltraLM2, 🥇 in 13B results) and 91.54% (UltraLM, 🥇 in LLaMA-1 results) win rates against text-davinci-003 on [AlpacaEval benchmark](https://tatsu-lab.github.io/alpaca_eval/)**
 - August 7, 2023: Releasing the first version of UltraLM-65B.
 - June 28, 2023: UltraLM-13B ranks #1 among open-source models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)!
 - June 27, 2023: We release the first version of UltraLM-13B, a powerful chat language model trained on UltraChat!
@@ -52,6 +53,12 @@ UltraLM-13B is based upon LLaMA-13B and supported by [BMTrain](https://github.co
 | ------------- | ------------- |------------- |
 | UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b) |v1.0|
 | UltraLM-65B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-65b) |v1.0|
+| UltraLM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraLM-13b-v2.0) |v2.0|
+| UltraRM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraRM-13b) |v1.0|
+| UltraCM-13B  | [Huggingface Repo](https://huggingface.co/openbmb/UltraCM-13b) |v1.0|
+
+
+
 
 
 
