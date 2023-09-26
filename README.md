@@ -30,7 +30,7 @@
 
 ## News
 - **❗️❗️ Septempber 26, 2023: Releasing a large-scale, fine-grained, diverse preference dataset [UltraFeedback](https://github.com/thunlp/UltraFeedback), a new language model [UltraLM-13B-v2.0](https://huggingface.co/openbmb/UltraLM-13b-v2.0), a reward model [UltraRM](https://huggingface.co/openbmb/UltraRM-13b) and a critic model [UltraCM](https://huggingface.co/openbmb/UltraCM-13b).**
-- **❗️❗️With UltraRM, a simple best-of-16 sampling achieves 92.30% (UltraLM2, 🥇 in 13B results) and 91.54% (UltraLM, 🥇 in LLaMA-1 results) win rates against text-davinci-003 on [AlpacaEval benchmark](https://tatsu-lab.github.io/alpaca_eval/)**
+- **❗️❗️With UltraRM, a simple best-of-16 sampling achieves 92.30% (UltraLM2, 🥇 in 13B results) and 91.54% (UltraLM, 🥇 in LLaMA-1 results) win rates against text-davinci-003 on [AlpacaEval benchmark](https://tatsu-lab.github.io/alpaca_eval/).**
 - August 7, 2023: Releasing the first version of UltraLM-65B.
 - June 28, 2023: UltraLM-13B ranks #1 among open-source models on [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)!
 - June 27, 2023: We release the first version of UltraLM-13B, a powerful chat language model trained on UltraChat!
