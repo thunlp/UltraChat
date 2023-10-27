@@ -202,7 +202,7 @@ We encourage users to closely monitor such phenomena, while we are also actively
 
 ## Data
 
-The dataset is intended solely for research and educational purposes and should not be construed as reflecting the opinions or views of the creators, owners, or contributors of this dataset. And it is distributed under [CC BY NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/) (non-commercial use).
+The dataset is intended solely for research and educational purposes and should not be construed as reflecting the opinions or views of the creators, owners, or contributors of this dataset. And it is distributed under the MIT license.
 
 
 ### Data Release
